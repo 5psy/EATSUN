@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main_eat"
-    android:background="#CCB2B2B2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#66B2B2B2">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="207dp"
         android:layout_height="225dp"
         android:layout_weight="0"
+        android:fontFamily="@font/malgunbd"
         android:gravity="bottom|right"
         android:text="EAT "
         android:textColor="#69D8AD"
@@ -21,6 +22,7 @@
         android:layout_width="207dp"
         android:layout_height="225dp"
         android:layout_weight="0"
+        android:fontFamily="@font/malgunbd"
         android:gravity="center|left"
         android:text=" SUN"
         android:textColor="#FF0000"
