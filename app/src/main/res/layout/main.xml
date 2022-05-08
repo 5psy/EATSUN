@@ -10,7 +10,7 @@
         android:layout_height="189dp"
         android:layout_weight="1"
         android:gravity="bottom|right"
-        android:text="EAT "
+        android:text="eat"
         android:textColor="#69D8AD"
         android:textSize="48sp"
         android:textStyle="bold" />
