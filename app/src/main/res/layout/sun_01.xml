@@ -3,29 +3,56 @@
     android:id="@+id/main_eat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#66B2B2B2">
+    android:background="#66B2B2B2"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="207dp"
-        android:layout_height="225dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_weight="0"
-        android:fontFamily="@font/malgunbd"
-        android:gravity="bottom|right"
-        android:text="EAT "
-        android:textColor="#69D8AD"
-        android:textSize="48sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/main_sun"
-        android:layout_width="207dp"
-        android:layout_height="225dp"
-        android:layout_weight="0"
-        android:fontFamily="@font/malgunbd"
-        android:gravity="center|left"
-        android:text=" SUN"
+        android:gravity="center|center_vertical"
+        android:text="EAT SUN"
         android:textColor="#FF0000"
         android:textSize="48sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textEmailAddress"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/PW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="PW"
+        android:inputType="textPassword"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="LOGIN" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="회원가입"
+        android:textColorLink="@color/teal_200" />
+
 </LinearLayout>
