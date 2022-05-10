@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#4DB2B2B2"
     android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".login">
 
     <LinearLayout
