@@ -33,7 +33,7 @@ public class register extends AppCompatActivity {
 
         nEtid = findViewById(R.id.editid);
         nEtpwd = findViewById(R.id.editpassword);
-        nEtpwdcheck = findViewById(R.id.passwordcheck);
+        //nEtpwdcheck = findViewById(R.id.passwordcheck);
         nBtnregister = findViewById(R.id.signupbutton);
 
         nBtnregister.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +41,7 @@ public class register extends AppCompatActivity {
             public void onClick(View v) {
                 String strid = nEtid.getText().toString();
                 String strpwd = nEtpwd.getText().toString();
-                String strpwdch = nEtpwdcheck.getText().toString();
+                //String strpwdch = nEtpwdcheck.getText().toString();
 
                 nFirebaseAuth.createUserWithEmailAndPassword(strid, strpwd).addOnCompleteListener(register.this, new OnCompleteListener<AuthResult>() {
                     @Override

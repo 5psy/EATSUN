@@ -20,7 +20,8 @@
 
         <activity
             android:name=".register"/>
-
+        <activity
+            android:name=".mainScreen"/>
 
         <activity
             android:name=".MainActivity"
