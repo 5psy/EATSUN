@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66B2B2B2"
+    android:backgroundTint="#B2B2B2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/malgunbd"
+                android:text="마이페이지"
+                android:textColor="#000000"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/malgunbd"
+        android:text="------------------------------------------------------------------------"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="386dp"
+        android:layout_height="186dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="#CCB2B2B2"
+        android:backgroundTint="#CCB2B2B2"
+        android:fontFamily="@font/malgunbd"
+        android:gravity="center"
+        android:text="000님, 예약 정보가 없습니다."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="263dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="25dp"
+        android:background="#CCB2B2B2"
+        android:backgroundTint="#CCB2B2B2"
+        android:fontFamily="@font/malgunbd"
+        android:gravity="center"
+        android:text="자리 위치 확인"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="263dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="23dp"
+        android:background="#CCB2B2B2"
+        android:backgroundTint="#CCB2B2B2"
+        android:fontFamily="@font/malgunbd"
+        android:gravity="center"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="142dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#7CCAB0"
+            android:fontFamily="@font/malgunbd"
+            android:text="입장"
+            android:textColor="#000000"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="140dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#CD5A5A"
+            android:fontFamily="@font/malgunbd"
+            android:text="퇴장"
+            android:textColor="#000000"
+            android:textSize="38sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
