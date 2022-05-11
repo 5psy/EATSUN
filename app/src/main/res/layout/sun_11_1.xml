@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#66B2B2B2">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
             android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/malgun"
             android:gravity="center"
             android:text="한식"
@@ -83,6 +85,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="부대찌개"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -95,6 +98,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="알밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -107,6 +111,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="닭고기 덮밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -130,6 +135,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="5900원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -141,6 +147,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="5900원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -152,6 +159,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="5900원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -213,6 +221,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="고기 국밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -225,6 +234,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="불고기 덮밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -237,6 +247,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="명란마요 덮밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -261,6 +272,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="5900원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -273,6 +285,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="6500원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -285,6 +298,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="6500원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -337,6 +351,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="명란알밥"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -349,6 +364,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="한식 뷔페"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -373,6 +389,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="6900원"
+                    android:textColor="#080808"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -385,6 +402,7 @@
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="5000원"
+                    android:textColor="#090909"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
