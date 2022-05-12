@@ -41,16 +41,16 @@
                 <ImageView
                     android:id="@+id/imageView10"
                     android:layout_width="100dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="60dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="45dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/korean_food_1" />
 
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="100dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="60dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="70dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/korean_food_2" />
 
@@ -86,7 +86,7 @@
                     android:gravity="center"
                     android:text="부대찌개"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -99,7 +99,7 @@
                     android:gravity="center"
                     android:text="알밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -112,7 +112,7 @@
                     android:gravity="center"
                     android:text="닭고기 덮밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -222,7 +222,7 @@
                     android:gravity="center"
                     android:text="고기 국밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -235,7 +235,7 @@
                     android:gravity="center"
                     android:text="불고기 덮밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -248,7 +248,7 @@
                     android:gravity="center"
                     android:text="명란마요 덮밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -267,7 +267,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="360dp"
+                    android:layout_marginTop="370dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
@@ -280,7 +280,7 @@
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="360dp"
+                    android:layout_marginTop="370dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
@@ -293,7 +293,7 @@
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="360dp"
+                    android:layout_marginTop="370dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
@@ -318,7 +318,7 @@
                     android:id="@+id/imageView13"
                     android:layout_width="102dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="380dp"
+                    android:layout_marginTop="390dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/korean_food_7" />
 
@@ -326,7 +326,7 @@
                     android:id="@+id/imageView14"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="380dp"
+                    android:layout_marginTop="390dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/korean_food_8" />
             </LinearLayout>
@@ -346,26 +346,26 @@
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="500dp"
+                    android:layout_marginTop="510dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="명란알밥"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="500dp"
+                    android:layout_marginTop="510dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
                     android:text="한식 뷔페"
                     android:textColor="#090909"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -384,7 +384,7 @@
                     android:id="@+id/textView31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="520dp"
+                    android:layout_marginTop="540dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
@@ -397,7 +397,7 @@
                     android:id="@+id/textView32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="520dp"
+                    android:layout_marginTop="540dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgun"
                     android:gravity="center"
@@ -453,6 +453,7 @@
                 android:layout_marginTop="680dp"
                 android:layout_weight="1"
                 android:background="#66B2B2B2"
+                android:backgroundTint="#B3B2B2B2"
                 android:text="결제"
                 android:textSize="20sp"
                 android:textStyle="bold" />
