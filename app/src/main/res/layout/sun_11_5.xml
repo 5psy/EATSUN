@@ -1,7 +1,472 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#66B2B2B2">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/malgunbd"
+            android:gravity="center"
+            android:text="양식"
+            android:textColor="#090909"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_1" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_2" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="등심 돈가스"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="고구마 돈가스"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="치즈 돈가스"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5000원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5500원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="240dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_4" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="240dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_5" />
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="240dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="토마토파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="크림파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="크림빠네파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="7900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView46"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="400dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_7" />
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="400dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_8" />
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="400dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/western_food_9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="510dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="로제파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="510dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="명란로제파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="510dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="명란크림파스타"
+                android:textColor="#090909"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="5900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="6900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="6900원"
+                android:textColor="#090909"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                android:layout_weight="1"
+                android:background="#66292323"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageView
+                android:id="@+id/imageView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                android:layout_weight="1"
+                android:background="#66292323"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="680dp"
+            android:layout_weight="1"
+            android:background="#66B2B2B2"
+            android:fontFamily="@font/malgunbd"
+            android:text="결제"
+            android:textSize="24sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
