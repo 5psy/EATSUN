@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     android:background="#66B2B2B2"
     android:gravity="left"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,14 +19,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/date"
+                android:id="@+id/text_view_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/malgunbd"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
+
 
             <ImageView
                 android:id="@+id/imageView4"
