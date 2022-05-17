@@ -19,7 +19,7 @@
                 android:id="@+id/seat44"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="230dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -27,7 +27,7 @@
                 android:id="@+id/seat45"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -35,7 +35,7 @@
                 android:id="@+id/seat46"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -43,14 +43,14 @@
                 android:id="@+id/seat47"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
                 android:id="@+id/seat48"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/seat49"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 
@@ -147,7 +147,7 @@
                 android:id="@+id/seat38"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="229dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -155,7 +155,7 @@
                 android:id="@+id/seat39"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -163,7 +163,7 @@
                 android:id="@+id/seat40"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -171,7 +171,7 @@
                 android:id="@+id/seat41"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -179,7 +179,7 @@
                 android:id="@+id/seat42"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -187,7 +187,7 @@
                 android:id="@+id/seat43"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="165dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
