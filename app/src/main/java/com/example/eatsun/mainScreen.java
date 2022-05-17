@@ -15,7 +15,6 @@ import java.util.Calendar;
 public class mainScreen extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
