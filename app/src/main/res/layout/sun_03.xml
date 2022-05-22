@@ -134,16 +134,18 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/malgunbd"
             android:gravity="center"
-            android:text="※ 학생회관 식당 위치 ※"
+            android:text="※ 오늘의 공지사항 ※"
             android:textColor="#000000"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/map"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            app:srcCompat="@drawable/map" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="332dp"
+            android:layout_height="124dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#B9C8F0"
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/textView13"
@@ -154,5 +156,25 @@
             android:text="       -----------------------------------------------------------"
             android:textColor="#464646" />
 
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/malgunbd"
+            android:text="       오늘의 추천메뉴"
+            android:textColor="#050505"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/malgun"
+            android:text="        ▶ 오늘의 추천메뉴는 ~~~입니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>
