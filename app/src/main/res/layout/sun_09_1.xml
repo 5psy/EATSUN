@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#66B2B2B2">
+    android:background="#66B2B2B2"
+    tools:context=".ReservationSeat">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -67,7 +68,8 @@
                 android:layout_height="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginTop="290dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="#FFFFFF"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/seat73"
