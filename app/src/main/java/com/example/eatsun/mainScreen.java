@@ -36,7 +36,7 @@ public class mainScreen extends AppCompatActivity {
         developer_info_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), mypage.class);
+                Intent intent = new Intent(getApplicationContext(), sun_14_1.class);
                 startActivity(intent);
             }
         });
