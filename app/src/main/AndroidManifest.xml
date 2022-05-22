@@ -25,6 +25,12 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ReservationSeat"
+            android:exported="true"/>
+        <activity
+            android:name=".sun_14_1"
             android:exported="true">
 
         </activity>
