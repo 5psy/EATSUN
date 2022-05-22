@@ -140,9 +140,9 @@
 
         <ImageView
             android:id="@+id/map"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="15dp"
             app:srcCompat="@drawable/map" />
 
         <TextView
