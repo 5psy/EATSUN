@@ -37,7 +37,7 @@ public class mainScreen extends AppCompatActivity {
         butn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(mainScreen.this, ReservationSeat.class);
+                Intent intent2 = new Intent(mainScreen.this,ReservationSeat.class);
                 startActivity(intent2);
 
             }
