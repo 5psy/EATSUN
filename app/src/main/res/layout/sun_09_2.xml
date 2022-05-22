@@ -12,6 +12,52 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#000000"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="이용중"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="이용가능"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/foodgarbage2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:background="#CCB2B2B2"
+                android:fontFamily="@font/malgunbd"
+                android:gravity="center"
+                android:text="정수기"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -19,15 +65,15 @@
                 android:id="@+id/seat44"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="230dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
                 android:id="@+id/seat45"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -35,7 +81,7 @@
                 android:id="@+id/seat46"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -43,14 +89,14 @@
                 android:id="@+id/seat47"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
                 android:id="@+id/seat48"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -58,7 +104,7 @@
                 android:id="@+id/seat49"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 
@@ -71,8 +117,8 @@
                 android:id="@+id/seat36"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="110dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -80,7 +126,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="110dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -88,7 +134,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="110dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -96,7 +142,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="110dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 
@@ -109,8 +155,8 @@
                 android:id="@+id/seat37"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="105dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="165dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -118,7 +164,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
-                android:layout_marginTop="105dp"
+                android:layout_marginTop="165dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -126,7 +172,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="105dp"
+                android:layout_marginTop="165dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
@@ -134,7 +180,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
-                android:layout_marginTop="105dp"
+                android:layout_marginTop="165dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
 
@@ -147,15 +193,15 @@
                 android:id="@+id/seat38"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
-                android:layout_marginTop="229dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
                 android:id="@+id/seat39"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -163,7 +209,7 @@
                 android:id="@+id/seat40"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -171,7 +217,7 @@
                 android:id="@+id/seat41"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -179,7 +225,7 @@
                 android:id="@+id/seat42"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -187,7 +233,7 @@
                 android:id="@+id/seat43"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="165dp"
+                android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
@@ -201,15 +247,15 @@
                 android:id="@+id/seat28"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
-                android:layout_marginTop="229dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="#FFFFFF" />
 
             <Button
                 android:id="@+id/seat29"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -217,7 +263,7 @@
                 android:id="@+id/seat30"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="310dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -225,7 +271,7 @@
                 android:id="@+id/seat31"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -233,7 +279,7 @@
                 android:id="@+id/seat32"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="310dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FFFFFF" />
 
@@ -241,7 +287,7 @@
                 android:id="@+id/seat33"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="300dp"
+                android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
                 android:backgroundTint="#FFFFFF" />
         </LinearLayout>
@@ -253,10 +299,10 @@
 
             <TextView
                 android:id="@+id/partition4"
-                android:layout_width="330dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="15dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="65dp"
                 android:background="#B5B3A9" />
 
         </LinearLayout>
@@ -268,18 +314,18 @@
 
             <TextView
                 android:id="@+id/partition5"
-                android:layout_width="30dp"
+                android:layout_width="40dp"
                 android:layout_height="120dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="105dp"
                 android:background="#B5B3A9" />
 
             <TextView
                 android:id="@+id/partition6"
-                android:layout_width="30dp"
+                android:layout_width="40dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="270dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="105dp"
                 android:background="#B5B3A9" />
         </LinearLayout>
 
@@ -297,18 +343,20 @@
 
             <ImageView
                 android:id="@+id/left1"
-                android:layout_width="wrap_content"
+                android:layout_width="53dp"
                 android:layout_height="45dp"
+                android:layout_marginLeft="95dp"
                 android:layout_marginTop="680dp"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
             <ImageView
                 android:id="@+id/right1"
-                android:layout_width="wrap_content"
+                android:layout_width="53dp"
                 android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="680dp"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 app:srcCompat="@android:drawable/ic_media_ff" />
         </LinearLayout>
 
