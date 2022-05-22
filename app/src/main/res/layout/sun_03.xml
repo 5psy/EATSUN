@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ScrollView"
+    android:id="@+id/button3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#66B2B2B2"
@@ -13,173 +13,146 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/malgunbd"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/mypage"
+                android:layout_width="43dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="365dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/mypage" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/malgun"
+            android:gravity="center|right"
+            android:text="EAT "
+            android:textColor="#69D8AD"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/malgun"
+            android:gravity="center|left"
+            android:text=" SUN"
+            android:textColor="#FF0000"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-        <LinearLayout
+
+        <TextView
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:fontFamily="@font/malgunbd"
+            android:text="     ---------------------------------------------------------------"
+            android:textColor="#464646" />
+    </LinearLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/text_view_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
+        <Button
+            android:id="@+id/resbutton"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="예약하기"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/malgunbd"
+            android:text="      학생회관 식당 메뉴"
+            android:textColor="#040303"
+            android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="43dp"
-                    android:layout_height="38dp"
-                    android:layout_marginLeft="365dp"
-                    android:layout_marginTop="5dp"
-                    app:srcCompat="@drawable/mypage" />
+        <view
+            android:id="@+id/view"
+            class="androidx.viewpager.widget.ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_marginTop="10dp" />
 
-            </RelativeLayout>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/malgunbd"
+            android:text="       -----------------------------------------------------------"
+            android:textColor="#464646"
+            android:textStyle="bold" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:fontFamily="@font/malgunbd"
+            android:gravity="center"
+            android:text="※ 학생회관 식당 위치※"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/malgun"
-                android:gravity="center|right"
-                android:text="EAT "
-                android:textColor="#69D8AD"
-                android:textSize="48sp"
-                android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/map" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/malgun"
-                android:gravity="center|left"
-                android:text=" SUN"
-                android:textColor="#FF0000"
-                android:textSize="48sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/malgunbd"
+            android:text="       -----------------------------------------------------------"
+            android:textColor="#464646" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/malgunbd"
-                android:text="     ---------------------------------------------------------------"
-                android:textColor="#464646" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/resbutton"
-                android:layout_width="match_parent"
-                android:layout_height="71dp"
-                android:text="예약하기"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/malgunbd"
-                android:text="      학생회관 식당 메뉴"
-                android:textColor="#040303"
-                android:textSize="16sp" />
-
-            <view
-                android:id="@+id/view"
-                class="androidx.viewpager.widget.ViewPager"
-                android:layout_width="match_parent"
-                android:layout_height="148dp"
-                android:layout_marginTop="10dp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/malgunbd"
-                android:text="       -----------------------------------------------------------"
-                android:textColor="#464646"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/malgunbd"
-                android:gravity="center"
-                android:text="※ 오늘의 공지사항 ※"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="332dp"
-                android:layout_height="124dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="12dp"
-                android:background="#B9C8F0"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/malgunbd"
-                android:text="       -----------------------------------------------------------"
-                android:textColor="#464646" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/malgunbd"
-                android:text="       오늘의 추천메뉴"
-                android:textColor="#050505"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/malgun"
-                android:text="        ▶ 오늘의 추천메뉴는 ~~~입니다."
-                android:textColor="#000000"
-                android:textSize="15sp" />
-        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+</LinearLayout>
