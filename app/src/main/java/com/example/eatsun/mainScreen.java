@@ -32,8 +32,8 @@ public class mainScreen extends AppCompatActivity {
         imageSlider = new ImageSlider(this);
         viewPager.setAdapter(imageSlider);
 
-        ImageView developer_info_btn = (ImageView) findViewById(R.id.mypage);
-        developer_info_btn.setOnClickListener(new View.OnClickListener(){
+        ImageView mypage = (ImageView) findViewById(R.id.mypage);
+       mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), mypage.class);
