@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4DB2B2B2"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".register">
 
     <LinearLayout
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:fontFamily="@font/malgunbd"
-            android:gravity="center"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="회원가입"
             android:textColor="#191717"
             android:textSize="30dp"
