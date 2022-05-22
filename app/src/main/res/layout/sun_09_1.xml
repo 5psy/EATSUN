@@ -410,7 +410,7 @@
                 android:layout_marginLeft="47dp"
                 android:layout_marginTop="685dp"
                 android:layout_weight="0"
-                android:backgroundTint="#B2B2B2"
+                android:backgroundTint="#4D673AB7"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
                 android:text="완료"

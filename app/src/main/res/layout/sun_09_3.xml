@@ -286,7 +286,7 @@
             <TextView
                 android:id="@+id/window"
                 android:layout_width="50dp"
-                android:layout_height="710dp"
+                android:layout_height="680dp"
                 android:layout_marginLeft="358dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
@@ -325,7 +325,7 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="685dp"
                 android:layout_weight="0"
-                android:backgroundTint="#B2B2B2"
+                android:backgroundTint="#4D673AB7"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
                 android:text="완료"

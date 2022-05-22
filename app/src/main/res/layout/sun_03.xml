@@ -31,7 +31,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/mypage"
                 android:layout_width="43dp"
                 android:layout_height="38dp"
                 android:layout_marginLeft="365dp"
