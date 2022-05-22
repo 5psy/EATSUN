@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "647539277303",
+    "project_id": "eatsun-45e56",
+    "storage_bucket": "eatsun-45e56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647539277303:android:53cdf8fda01732b03d02f2",
+        "android_client_info": {
+          "package_name": "com.example.eatsun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647539277303-tog1l5r56sb6a8olrka023bi6mgo3nbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatsun",
+            "certificate_hash": "fb5b3bd44c8d952b11b37825e210a7d79fd0ed31"
+          }
+        },
+        {
+          "client_id": "647539277303-t524ti600ku4cjjqlbb2apnpfsjohnf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGOL97nTILOQ5ByR8lbMZ9vZCWHDyx8As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647539277303-t524ti600ku4cjjqlbb2apnpfsjohnf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
