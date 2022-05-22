@@ -18,6 +18,7 @@ public class mainScreen extends AppCompatActivity {
 
     ImageSlider imageSlider;
     ViewPager viewPager;
+    private Button butn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +33,20 @@ public class mainScreen extends AppCompatActivity {
         imageSlider = new ImageSlider(this);
         viewPager.setAdapter(imageSlider);
 
-        ImageView developer_info_btn = (ImageView) findViewById(R.id.mypage);
-        developer_info_btn.setOnClickListener(new View.OnClickListener(){
+        butn = findViewById(R.id.resbutton);
+        butn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(mainScreen.this, ReservationSeat.class);
+                startActivity(intent2);
+
+            }
+        });
+        ImageView mypage = (ImageView) findViewById(R.id.mypage);
+        mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), mypage.class);
+                Intent intent = new Intent(getApplicationContext(), sun_14_1.class);
                 startActivity(intent);
             }
         });
