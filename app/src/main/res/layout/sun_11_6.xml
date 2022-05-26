@@ -16,7 +16,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView51"
+                android:id="@+id/back11"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="18dp"

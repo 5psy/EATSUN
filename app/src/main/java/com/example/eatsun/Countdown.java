@@ -11,64 +11,70 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class Countdown extends AppCompatActivity {
-    private static final long START_TIME_IN_MILLIS = 2400000;
-    private TextView countdown;
-    private Button in;
 
-    private CountDownTimer mcountDownTimer;
+    private static final long START_TIME_IN_MILLIS = 2400000;
+
+    private TextView mTextViewCountDown;
+    private Button mButtonStartPause;
+
+    private  CountDownTimer mCountDownTimer;
+
     private boolean mTimerRunning;
-    private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+
+    private long mTimerLeftInMillis = START_TIME_IN_MILLIS;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstancesState) {
+        super.onCreate(savedInstancesState);
         setContentView(R.layout.sun_14_2);
 
-        countdown = findViewById(R.id.countdown);
-        in = findViewById(R.id.in);
+        mTextViewCountDown = findViewById(R.id.text_view_contdown);
+        mButtonStartPause = findViewById(R.id.button_start_pause);
 
-        in.setOnClickListener(new View.OnClickListener() {
+        mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mTimerRunning){
+                if(mTimerRunning){
                     pauseTimer();
-                }else{
+                } else{
                     startTimer();
                 }
+
             }
-
-            private void startTimer() {
-                mcountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        mTimeLeftInMillis = millisUntilFinished;
-                        updateCountDownText();
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        mTimerRunning = false;
-                        in.setText("Start");
-                        in.setVisibility(View.INVISIBLE);
-                    }
-                }.start();
-
-                mTimerRunning = true;
-                in.setText("pause");
-            }
-            private void pauseTimer(){
-                mcountDownTimer.cancel();
-                mTimerRunning = false;
-            }
-            private void updateCountDownText(){
-                int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
-                int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
-
-                String timeLeftFormatted = String.format(Locale.getDefault(), "%02d분 %02d초", minutes, seconds);
-
-                countdown.setText(timeLeftFormatted);
-        }
         });
+    }
 
+    private void startTimer(){
+        mCountDownTimer=new CountDownTimer(mTimerLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                mTimerLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+            }
+
+            @Override
+            public void onFinish() {
+                mTimerRunning = false;
+                mButtonStartPause.setText("입장");
+                mButtonStartPause.setVisibility(View.VISIBLE);
+
+            }
+        }.start();
+
+        mTimerRunning = true;
+        mButtonStartPause.setText("입장");
+    }
+
+    private void pauseTimer(){
+        mCountDownTimer.cancel();
+        mTimerRunning = false;
+        mButtonStartPause.setText("입장");
+    }
+    private void updateCountDownText(){
+        int minutes = (int) ( mTimerLeftInMillis / 1000 ) / 60;
+        int seconds = (int) ( mTimerLeftInMillis / 1000 ) % 60;
+
+        String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+        mTextViewCountDown.setText(timeLeftFormatted);
     }
 }

@@ -35,6 +35,7 @@
 
         </activity>
         <activity android:name=".sun_14_2" />
+        <activity android:name=".back" />
     </application>
 
 </manifest>

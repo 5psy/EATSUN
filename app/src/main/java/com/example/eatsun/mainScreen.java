@@ -50,7 +50,7 @@ public class mainScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView bibimbap = (ImageView) findViewById(R.id.koreanfood);
+        /*ImageView bibimbap = (ImageView) findViewById(R.id.koreanfood);
         bibimbap.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -58,7 +58,7 @@ public class mainScreen extends AppCompatActivity {
                 startActivity(intent3);
             }
 
-        });
+        });*/
 
     }
 
