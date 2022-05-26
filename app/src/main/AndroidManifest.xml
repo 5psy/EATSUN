@@ -30,10 +30,11 @@
             android:name=".ReservationSeat"
             android:exported="true"/>
         <activity
-            android:name=".sun_14_1"
+            android:name=".mypage1"
             android:exported="true">
 
         </activity>
+        <activity android:name=".mypage2" />
     </application>
 
 </manifest>

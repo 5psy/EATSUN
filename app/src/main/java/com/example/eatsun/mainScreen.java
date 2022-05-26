@@ -46,19 +46,19 @@ public class mainScreen extends AppCompatActivity {
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_14_1.class);
+                Intent intent = new Intent(getApplicationContext(), mypage1.class);
                 startActivity(intent);
             }
         });
         ImageView bibimbap = (ImageView) findViewById(R.id.koreanfood);
-        bibimbap.setOnClickListener(new View.OnClickListener(){
+        /*bibimbap.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent3 = new Intent(getApplicationContext(), sun_11_1.class);
                 startActivity(intent3);
             }
 
-        });
+        });*/
 
     }
 
