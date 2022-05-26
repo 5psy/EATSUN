@@ -17,7 +17,7 @@ public class ReservationSeat extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sun_09_1);
+        setContentView(com.example.eatsun.R.layout.sun_09_1);
 
         ImageView mypage = (ImageView) findViewById(R.id.right2);
         mypage.setOnClickListener(new View.OnClickListener(){
@@ -27,7 +27,7 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ToggleButton tb=(ToggleButton)this.findViewById(R.id. seat62); //앞에 FINAL일수
+        /*ToggleButton tb=(ToggleButton)this.findViewById(R.id. seat62); //앞에 FINAL일수
         tb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +39,7 @@ public class ReservationSeat extends AppCompatActivity {
                 }
             }
         });
+
         Button butn=(Button)this.findViewById(R.id. seat60); //앞에 FINAL일수
         tb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +51,15 @@ public class ReservationSeat extends AppCompatActivity {
                     butn.setBackgroundColor(Color.WHITE);
                 }
             }
+        });*/
+        Button b61 = (Button) this.findViewById(R.id. seat61);
+        b61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b61.setSelected(true);
+            }
         });
+
 
     }
 }
