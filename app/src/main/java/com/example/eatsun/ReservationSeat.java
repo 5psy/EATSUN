@@ -27,14 +27,6 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView ic_media_rew = (ImageView) findViewById(R.id.left1);
-        ic_media_rew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ReservationSeat.class);
-                startActivity(intent);
-            }
-        });
 
         Button b50 = (Button) this.findViewById(R.id. seat50);
         Button b51 = (Button) this.findViewById(R.id. seat51);
