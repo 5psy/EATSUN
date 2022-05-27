@@ -42,17 +42,15 @@ public class mainScreen extends AppCompatActivity {
 
             }
         });
-        ImageView mypage;
-        mypage = (ImageView) findViewById(R.id.mypage);
+        ImageView mypage = (ImageView) findViewById(R.id.mypage);
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_14_1.class);
+                Intent intent = new Intent(getApplicationContext(), sun_14_2.class);
                 startActivity(intent);
             }
         });
-        /*ImageView bibimbap;
-        bibimbap = (ImageView)findViewById(R.id.koreanfood);
+        /*ImageView bibimbap = (ImageView) findViewById(R.id.koreanfood);
         bibimbap.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
