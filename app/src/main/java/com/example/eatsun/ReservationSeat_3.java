@@ -16,6 +16,6 @@ public class ReservationSeat_3 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sun_09_2);
+        setContentView(R.layout.sun_09_3);
     }
 }
