@@ -304,7 +304,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/backbutton"
+                android:id="@+id/back4"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="680dp"
