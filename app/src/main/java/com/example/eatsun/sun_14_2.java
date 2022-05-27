@@ -25,7 +25,7 @@ public class sun_14_2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 button.setEnabled(false);
-                new CountDownTimer(2400000, 1000) {
+                new CountDownTimer(100000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
                         NumberFormat format = new DecimalFormat("00");
