@@ -35,6 +35,9 @@
         <activity
             android:name=".CategoryActivity"
             android:exported="true"/>
+        <activity
+            android:name="sun_10"
+            android:exported="true"/>
     </application>
 
 </manifest>
