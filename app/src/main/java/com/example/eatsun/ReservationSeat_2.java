@@ -11,11 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 public class ReservationSeat_2 extends AppCompatActivity {
-
-    ImageSlider imageSlider;
-    ViewPager viewPager;
-    private Button butn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

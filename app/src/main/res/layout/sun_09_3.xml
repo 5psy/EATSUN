@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#66B2B2B2"
     android:orientation="vertical">
-    tools:context=".ReservationSeat_3"
 
     <RelativeLayout
         android:layout_width="match_parent"
