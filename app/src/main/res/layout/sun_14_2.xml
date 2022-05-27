@@ -143,7 +143,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/enter"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginLeft="40dp"
@@ -156,7 +156,7 @@
             android:textSize="38sp" />
 
         <Button
-            android:id="@+id/reset"
+            android:id="@+id/exit"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginLeft="225dp"

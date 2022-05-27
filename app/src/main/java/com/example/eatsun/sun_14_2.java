@@ -16,22 +16,23 @@ import java.util.Locale;
 public class sun_14_2 extends AppCompatActivity {
     private static final long START_TIME_IN_MILLIS = 2400000;
     private long mTimeLeftMillis = START_TIME_IN_MILLIS;
-    private CountDownTimer mCountDownTimer;
-    private boolean mTimerRunning;
 
     TextView countdown_tv;
-    Button button;
-    Button buttonReset;
+    Button buttonenter;
+    Button buttonexit;
+    CountDownTimer CountDownTimer;
+    boolean TimerRunning;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
-        button = findViewById(R.id.btn);
-        buttonReset = findViewById(R.id.reset);
+        buttonenter = findViewById(R.id.enter);
+        buttonexit = findViewById(R.id.exit);
         countdown_tv = findViewById(R.id.countdown_tv);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonenter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startTimer();
@@ -54,7 +55,7 @@ public class sun_14_2 extends AppCompatActivity {
             }
         });
 
-        buttonReset.setOnClickListener(new View.OnClickListener() {
+        buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resetTimer();
@@ -63,7 +64,7 @@ public class sun_14_2 extends AppCompatActivity {
     }
 
     private void startTimer(){
-        mCountDownTimer = new CountDownTimer(mTimeLeftMillis, 1000) {
+        CountDownTimer = new CountDownTimer(mTimeLeftMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 mTimeLeftMillis = millisUntilFinished;
@@ -76,19 +77,19 @@ public class sun_14_2 extends AppCompatActivity {
             }
         }.start();
 
-        mTimerRunning = false;
+        TimerRunning = false;
     }
     private void resetTimer(){
-        mCountDownTimer.cancel();
-        mTimerRunning = true;
+        CountDownTimer.cancel();
+        TimerRunning = true;
         mTimeLeftMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
     }
     private void updateCountDownText(){
-        int min = (int) (mTimeLeftMillis/1000)/60;
-        int sec = (int) (mTimeLeftMillis/1000)%60;
+        int min = (int) (mTimeLeftMillis / 1000) / 60;
+        int sec = (int) (mTimeLeftMillis / 1000) % 60;
 
-        String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
+        String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d", min, sec);
 
         countdown_tv.setText(timeLeftFormatted);
     }
