@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CategoryActivity extends AppCompatActivity{
 
-    Button button1, button2, button3, button4;
+    private Button button1, button2, button3, button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
