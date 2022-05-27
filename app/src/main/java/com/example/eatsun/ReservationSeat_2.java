@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-public class RS_3 extends AppCompatActivity {
+public class ReservationSeat_2 extends AppCompatActivity {
 
     ImageSlider imageSlider;
     ViewPager viewPager;
