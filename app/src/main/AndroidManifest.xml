@@ -31,9 +31,17 @@
             android:exported="true"/>
         <activity
             android:name=".sun_14_2"
-            android:exported="true">
+            android:exported="true"/>
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ReservationSeat_2"
+            android:exported="true"/>
+        <activity
+            android:name=".ReservationSeat_3"
+            android:exported="true"/>
 
-        </activity>
     </application>
 
 </manifest>
