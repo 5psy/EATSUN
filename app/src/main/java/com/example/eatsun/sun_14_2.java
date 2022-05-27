@@ -21,14 +21,14 @@ public class sun_14_2 extends AppCompatActivity {
 
     TextView countdown_tv;
     Button button;
-    private Button mButtonReset;
+    Button buttonReset;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
         button = findViewById(R.id.btn);
-        mButtonReset = findViewById(R.id.reset);
+        buttonReset = findViewById(R.id.reset);
         countdown_tv = findViewById(R.id.countdown_tv);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +54,7 @@ public class sun_14_2 extends AppCompatActivity {
             }
         });
 
-        mButtonReset.setOnClickListener(new View.OnClickListener() {
+        buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resetTimer();
