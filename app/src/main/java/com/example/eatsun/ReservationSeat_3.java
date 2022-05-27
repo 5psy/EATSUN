@@ -14,7 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 public class ReservationSeat_3 extends AppCompatActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_09_3);
     }

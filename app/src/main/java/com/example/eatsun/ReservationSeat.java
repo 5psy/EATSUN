@@ -23,7 +23,7 @@ public class ReservationSeat extends AppCompatActivity {
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_9_2.class);
+                Intent intent = new Intent(getApplicationContext(), ReservationSeat_2.class);
                 startActivity(intent);
             }
         });
