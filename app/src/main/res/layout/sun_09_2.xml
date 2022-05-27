@@ -67,7 +67,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="250dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="44" />
 
             <Button
                 android:id="@+id/seat45"
@@ -75,7 +76,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="45" />
 
             <Button
                 android:id="@+id/seat46"
@@ -83,14 +85,16 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="46" />
 
             <Button
                 android:id="@+id/seat47"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="47" />
 
             <Button
                 android:id="@+id/seat48"
@@ -98,14 +102,16 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="48" />
 
             <Button
                 android:id="@+id/seat49"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="40dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="49" />
         </LinearLayout>
 
         <LinearLayout
@@ -119,7 +125,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="76dp"
                 android:layout_marginTop="110dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="36" />
 
             <Button
                 android:id="@+id/seat34"
@@ -127,7 +134,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="110dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="34" />
 
             <Button
                 android:id="@+id/seat26"
@@ -135,7 +143,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="110dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="26" />
 
             <Button
                 android:id="@+id/seat24"
@@ -143,7 +152,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="110dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="24" />
         </LinearLayout>
 
         <LinearLayout
@@ -157,7 +167,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="76dp"
                 android:layout_marginTop="165dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="37" />
 
             <Button
                 android:id="@+id/seat35"
@@ -165,7 +176,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="165dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="35" />
 
             <Button
                 android:id="@+id/seat27"
@@ -173,7 +185,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="165dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="27" />
 
             <Button
                 android:id="@+id/seat25"
@@ -181,7 +194,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="165dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="25" />
         </LinearLayout>
 
         <LinearLayout
@@ -195,7 +209,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="250dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="38" />
 
             <Button
                 android:id="@+id/seat39"
@@ -203,7 +218,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="39" />
 
             <Button
                 android:id="@+id/seat40"
@@ -211,7 +227,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="40" />
 
             <Button
                 android:id="@+id/seat41"
@@ -219,7 +236,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="41" />
 
             <Button
                 android:id="@+id/seat42"
@@ -227,7 +245,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="42" />
 
             <Button
                 android:id="@+id/seat43"
@@ -235,7 +254,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="43" />
         </LinearLayout>
 
         <LinearLayout
@@ -249,7 +269,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="250dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="28" />
 
             <Button
                 android:id="@+id/seat29"
@@ -257,7 +278,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="29" />
 
             <Button
                 android:id="@+id/seat30"
@@ -265,7 +287,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="30" />
 
             <Button
                 android:id="@+id/seat31"
@@ -273,7 +296,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="31" />
 
             <Button
                 android:id="@+id/seat32"
@@ -281,7 +305,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="32" />
 
             <Button
                 android:id="@+id/seat33"
@@ -289,7 +314,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="310dp"
                 android:layout_marginTop="1dp"
-                android:backgroundTint="#FFFFFF" />
+                android:backgroundTint="@color/button_background_color"
+                android:text="33" />
         </LinearLayout>
 
         <LinearLayout
@@ -362,7 +388,7 @@
             <Button
                 android:id="@+id/complete2"
                 android:layout_width="80dp"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="685dp"
                 android:backgroundTint="#4D673AB7"
