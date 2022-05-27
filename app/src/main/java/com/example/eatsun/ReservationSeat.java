@@ -12,7 +12,7 @@ import android.widget.ToggleButton;
 
 public class ReservationSeat extends AppCompatActivity {
 
-    private Button button, button5, button6, button7;
+    private Button button, button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +69,6 @@ public class ReservationSeat extends AppCompatActivity {
         Button b80 = (Button) this.findViewById(R.id. seat80);
         Button b81 = (Button) this.findViewById(R.id. seat81);
         button5 = findViewById(R.id.complete);
-        button6 = findViewById(R.id.complete2);
-        button7 = findViewById(R.id.complete3);
 
         b50.setOnClickListener(new View.OnClickListener() {
             @Override
