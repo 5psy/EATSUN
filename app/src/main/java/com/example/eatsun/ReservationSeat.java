@@ -19,8 +19,8 @@ public class ReservationSeat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
 
-        ImageView mypage = (ImageView) findViewById(R.id.right2);
-        mypage.setOnClickListener(new View.OnClickListener(){
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.right2);
+        ic_media_ff.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), ReservationSeat_2.class);
