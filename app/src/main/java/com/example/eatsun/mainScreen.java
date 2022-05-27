@@ -47,7 +47,7 @@ public class mainScreen extends AppCompatActivity {
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_14_1.class);
+                Intent intent = new Intent(getApplicationContext(), sun_14_2.class);
                 startActivity(intent);
             }
         });

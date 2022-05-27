@@ -148,7 +148,7 @@
             android:layout_marginTop="40dp"
             android:backgroundTint="#7CCAB0"
             android:fontFamily="@font/malgunbd"
-            android:onClick="입장하셨습니다"
+
             android:text="Start"
             android:textColor="#000000"
             android:textSize="38sp" />
