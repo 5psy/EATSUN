@@ -1254,19 +1254,6 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_10.class);
-                startActivity(intent);
-            }
-        });
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_10.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
