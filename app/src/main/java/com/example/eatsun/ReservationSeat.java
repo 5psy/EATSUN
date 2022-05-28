@@ -19,6 +19,14 @@ public class ReservationSeat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
 
+        ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back2);
+        actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
+                startActivity(intent);
+            }
+        });
         ImageView ic_media_ff = (ImageView) findViewById(R.id.right2);
         ic_media_ff.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -1249,7 +1257,7 @@ public class ReservationSeat extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_10.class);
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });
