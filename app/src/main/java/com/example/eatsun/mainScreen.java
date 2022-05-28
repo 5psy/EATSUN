@@ -42,8 +42,8 @@ public class mainScreen extends AppCompatActivity {
 
             }
         });
-        ImageView mypage;
-        mypage = (ImageView) findViewById(R.id.mypage);
+        //ImageView mypage;
+        ImageView mypage = (ImageView) findViewById(R.id.mypage);
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
