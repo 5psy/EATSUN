@@ -22,7 +22,6 @@
             android:name=".register"/>
         <activity
             android:name=".mainScreen"/>
-
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
@@ -31,6 +30,9 @@
             android:exported="true"/>
         <activity
             android:name=".sun_14_2"
+            android:exported="true"/>
+        <activity
+            android:name="countdown"
             android:exported="true"/>
         <activity
             android:name=".CategoryActivity"
