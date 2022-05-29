@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EATSUN</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="total_price">총 주문금액 : </string>
 </resources>
