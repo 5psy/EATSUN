@@ -46,6 +46,14 @@ public class sun_11_1 extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        ImageView next = (ImageView) findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), sun_11_2.class);
+                startActivity(intent);
+            }
+        });
     }
 
             public void plusOrder1 (View view){

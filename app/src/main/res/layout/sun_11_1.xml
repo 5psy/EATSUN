@@ -22,14 +22,13 @@
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
                 android:id="@+id/한식1"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="157dp"
+                android:layout_marginLeft="180dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/malgun"
                 android:gravity="center"
@@ -818,7 +817,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="680dp"
                     android:layout_weight="0"
                     android:fontFamily="@font/malgunbd"
@@ -834,12 +833,11 @@
                     android:layout_weight="0"
                     android:fontFamily="@font/malgunbd"
                     android:textSize="24sp" />
-
                 <Button
                     android:id="@+id/결제"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="7dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="680dp"
                     android:layout_weight="0"
                     android:background="#66B2B2B2"

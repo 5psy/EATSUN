@@ -308,7 +308,7 @@
                 android:id="@+id/back4"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="685dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <ImageView
@@ -316,7 +316,7 @@
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="95dp"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="685dp"
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
             <Button
