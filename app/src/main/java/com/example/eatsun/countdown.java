@@ -23,7 +23,7 @@ public class countdown extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sun_14_2);
+         setContentView(R.layout.sun_14_2);
 
         buttonenter = findViewById(R.id.enter);
         buttonexit = findViewById(R.id.exit);
