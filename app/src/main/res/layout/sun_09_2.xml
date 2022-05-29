@@ -365,7 +365,7 @@
                 android:id="@+id/back3"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="685dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <ImageView
@@ -373,7 +373,7 @@
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="95dp"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="685dp"
                 android:layout_weight="0"
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
@@ -382,7 +382,7 @@
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="680dp"
+                android:layout_marginTop="685dp"
                 android:layout_weight="0"
                 app:srcCompat="@android:drawable/ic_media_ff" />
 
@@ -391,7 +391,7 @@
                 android:layout_width="80dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="685dp"
+                android:layout_marginTop="680dp"
                 android:backgroundTint="#4D673AB7"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
