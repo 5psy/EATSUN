@@ -46,8 +46,8 @@ public class sun_11_1 extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-        ImageView next = (ImageView) findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.next);
+        ic_media_ff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sun_11_2.class);
