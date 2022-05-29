@@ -790,23 +790,23 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="#66B2B2B2"
-                    android:backgroundTint="#66B2B2B2"
-                    android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="724dp"
+                android:layout_marginBottom="10dp"
+                android:background="#66B2B2B2"
+                android:backgroundTint="#66B2B2B2"
+                android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/한식2페이지가기"
-                        android:layout_width="53dp"
-                        android:layout_height="45dp"
-                        android:layout_marginLeft="200dp"
-                        android:layout_marginTop="650dp"
-                        app:srcCompat="@android:drawable/ic_media_ff" />
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="53dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="650dp"
+                    app:srcCompat="@android:drawable/ic_media_ff" />
 
-                </LinearLayout>
+            </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
