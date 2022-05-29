@@ -28,7 +28,7 @@
                 android:id="@+id/한식"
                 android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="180dp"
+                android:layout_marginLeft="157dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/malgun"
                 android:gravity="center"
