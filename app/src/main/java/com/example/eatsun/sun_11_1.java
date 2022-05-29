@@ -46,6 +46,14 @@ public class sun_11_1 extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.next);
+        ic_media_ff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), sun_11_2.class);
+                startActivity(intent);
+            }
+        });
     }
 
             public void plusOrder1 (View view){
@@ -241,35 +249,35 @@ public class sun_11_1 extends AppCompatActivity {
                 }
                 else if(check == 4) {
                     price = 5900;
-                    menu2Price = num * price;
+                    menu4Price = num * price;
                     //TextView quantityView = findViewById(R.id.price_view2);
                     //quantityView.setText(String.valueOf(menu2Price));
                     displayTotalPrice();
                 }
                 else if(check == 5) {
                     price = 6500;
-                    menu3Price = num * price;
+                    menu5Price = num * price;
                     //TextView quantityView = findViewById(R.id.price_view3);
                     //quantityView.setText(String.valueOf(menu3Price));
                     displayTotalPrice();
                 }
                 else if(check == 6) {
                     price = 6500;
-                    menu2Price = num * price;
+                    menu6Price = num * price;
                     //TextView quantityView = findViewById(R.id.price_view2);
                     //quantityView.setText(String.valueOf(menu2Price));
                     displayTotalPrice();
                 }
                 else if(check == 7) {
                     price = 6900;
-                    menu3Price = num * price;
+                    menu7Price = num * price;
                     //TextView quantityView = findViewById(R.id.price_view3);
                     //quantityView.setText(String.valueOf(menu3Price));
                     displayTotalPrice();
                 }
                 else if(check == 8) {
                     price = 5000;
-                    menu2Price = num * price;
+                    menu8Price = num * price;
                     //TextView quantityView = findViewById(R.id.price_view2);
                     //quantityView.setText(String.valueOf(menu2Price));
                     displayTotalPrice();
@@ -277,8 +285,7 @@ public class sun_11_1 extends AppCompatActivity {
             }
 
             public void displayTotalPrice() {
-                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price
-                        + menu7Price + menu8Price;
+                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price + menu7Price + menu8Price;
                 TextView quantityView = findViewById(R.id.total_price_view);
                 quantityView.setText(String.valueOf(totalPrice));
             }
