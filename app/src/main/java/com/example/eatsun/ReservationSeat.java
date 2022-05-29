@@ -12,21 +12,30 @@ import android.widget.ToggleButton;
 
 public class ReservationSeat extends AppCompatActivity {
 
-    private Button button, button5, button6, button7;
+    private Button button, button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
 
-        ImageView mypage = (ImageView) findViewById(R.id.right2);
-        mypage.setOnClickListener(new View.OnClickListener(){
+        ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back2);
+        actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_9_2.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
                 startActivity(intent);
             }
         });
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.right2);
+        ic_media_ff.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), ReservationSeat_2.class);
+                startActivity(intent);
+            }
+        });
+
         Button b50 = (Button) this.findViewById(R.id. seat50);
         Button b51 = (Button) this.findViewById(R.id. seat51);
         Button b52 = (Button) this.findViewById(R.id. seat52);
@@ -60,8 +69,6 @@ public class ReservationSeat extends AppCompatActivity {
         Button b80 = (Button) this.findViewById(R.id. seat80);
         Button b81 = (Button) this.findViewById(R.id. seat81);
         button5 = findViewById(R.id.complete);
-        button6 = findViewById(R.id.complete2);
-        button7 = findViewById(R.id.complete3);
 
         b50.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1250,7 +1257,7 @@ public class ReservationSeat extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_10.class);
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });

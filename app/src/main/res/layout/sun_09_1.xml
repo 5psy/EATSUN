@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#66B2B2B2"
     tools:context=".ReservationSeat">
 
@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -41,7 +41,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -105,7 +105,7 @@
                 android:layout_marginTop="15dp"
                 android:backgroundTint="@color/button_background_color"
                 android:text="80" />"
-                android:text="80" />
+            android:text="80" />
 
             <Button
                 android:id="@+id/seat81"
@@ -186,8 +186,7 @@
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="110dp"
                 android:backgroundTint="@color/button_background_color"
-                android:text="62"
-                 />
+                android:text="62" />
 
             <Button
                 android:id="@+id/seat60"
@@ -493,4 +492,4 @@
     </RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

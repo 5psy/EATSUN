@@ -42,8 +42,8 @@ public class mainScreen extends AppCompatActivity {
 
             }
         });
-        ImageView mypage;
-        mypage = (ImageView) findViewById(R.id.mypage);
+        //ImageView mypage;
+        ImageView mypage = (ImageView) findViewById(R.id.mypage);
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -51,16 +51,6 @@ public class mainScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*ImageView bibimbap;
-        bibimbap = (ImageView)findViewById(R.id.koreanfood);
-        bibimbap.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent3 = new Intent(getApplicationContext(), sun_11_1.class);
-                startActivity(intent3);
-            }
-
-        });*/
     }
 }
 

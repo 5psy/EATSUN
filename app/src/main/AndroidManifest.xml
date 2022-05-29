@@ -41,6 +41,9 @@
         <activity
             android:name=".ReservationSeat_3"
             android:exported="true"/>
+        <activity
+            android:name=".sun_10"
+            android:exported="true"/>
 
     </application>
 

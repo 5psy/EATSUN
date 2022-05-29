@@ -7,6 +7,8 @@
         <entry key="..\:/EATSUN/app/src/main/res/drawable/ic_arrow_back_white_24dp.xml" value="0.201" />
         <entry key="..\:/EATSUN/app/src/main/res/drawable/ic_launcher_background.xml" value="0.201" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/EATSUN/app/src/main/res/layout/cart.xml" value="0.2033514492753623" />
+        <entry key="..\:/EATSUN/app/src/main/res/layout/click.xml" value="0.1" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/main.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/slider.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_01.xml" value="0.264" />
@@ -17,6 +19,7 @@
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_09_3.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_10.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_1.xml" value="0.25364583333333335" />
+        <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_1_1.xml" value="0.2" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_2.xml" value="0.2368659420289855" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_3.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_4.xml" value="0.25364583333333335" />
