@@ -18,8 +18,8 @@ public class sun_11_2 extends AppCompatActivity{
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_2);
 
-        ImageView back7 = (ImageView) findViewById(R.id.back7);
-        back7.setOnClickListener(new View.OnClickListener() {
+        ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back7);
+        actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);

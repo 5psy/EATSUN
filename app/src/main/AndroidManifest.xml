@@ -32,9 +32,6 @@
             android:name=".sun_14_2"
             android:exported="true"/>
         <activity
-            android:name=".sun_14_1"
-            android:exported="true"/>
-        <activity
             android:name="countdown"
             android:exported="true"/>
         <activity
@@ -58,9 +55,7 @@
         <activity
             android:name=".sun_11_6"
             android:exported="true"/>
-        <activity
-            android:name=".cal"
-            android:exported="true"/>
+
 
     </application>
 
