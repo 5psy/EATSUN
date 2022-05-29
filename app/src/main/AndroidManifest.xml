@@ -55,7 +55,8 @@
         <activity
             android:name=".sun_11_6"
             android:exported="true"/>
-        <activity android:name=".sun_11_2"
+        <activity
+            android:name=".sun_11_2"
             android:exported="true"/>
 
 
