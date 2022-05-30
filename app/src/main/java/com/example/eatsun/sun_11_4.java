@@ -68,7 +68,7 @@ public class sun_11_4 extends AppCompatActivity {
     public void displaySinglePrice (int num, int check) {
         int price;
         if (check == 21) {
-            price = 3500;
+            price = 4000;
             menu21Price = num * price;
             //TextView quantityView = findViewById(R.id.price_view1);
             //quantityView.setText(String.valueOf(menu1Price));
