@@ -25,7 +25,7 @@
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
-                android:id="@+id/고기국밥"
+                android:id="@+id/mypage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="115dp"

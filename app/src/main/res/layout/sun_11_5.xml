@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scroll6"
+    android:id="@+id/scroll7"
     android:background="#66B2B2B2">
 
     <LinearLayout
@@ -16,7 +16,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/back10"
+                android:id="@+id/back11"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="10dp"
@@ -24,14 +24,13 @@
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
-                android:id="@+id/textView61"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView82"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginLeft="160dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
-                android:text="양식"
+                android:text="중식"
                 android:textColor="#090909"
                 android:textSize="34sp" />
         </RelativeLayout>
@@ -47,30 +46,30 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView40"
+                    android:id="@+id/고기짬뽕사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_1" />
+                    app:srcCompat="@drawable/chinese_food_1" />
 
                 <ImageView
-                    android:id="@+id/imageView41"
+                    android:id="@+id/고기짬뽕밥사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_2" />
+                    app:srcCompat="@drawable/chinese_food_2" />
 
                 <ImageView
-                    android:id="@+id/imageView42"
+                    android:id="@+id/중화덮밥사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_3" />
+                    app:srcCompat="@drawable/chinese_food_3" />
             </LinearLayout>
         </LinearLayout>
 
@@ -85,37 +84,37 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView62"
+                    android:id="@+id/고기짬뽕"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="등심 돈가스"
+                    android:text="고기짬뽕"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView63"
+                    android:id="@+id/고기짬뽕밥"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="고구마 돈가스"
+                    android:text="고기짬뽕밥"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView66"
+                    android:id="@+id/중화덮밥"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="치즈 돈가스"
+                    android:text="중화덮밥"
                     android:textColor="#090909"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -129,25 +128,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="25dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView67"
+                    android:id="@+id/고기짬뽕가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="5000원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView68"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="5500원"
@@ -155,11 +143,24 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView69"
+                    android:id="@+id/고기짬뽕밥가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="75dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="5500원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/중화덮밥가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginRight="18dp"
+                    android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="5900원"
@@ -167,7 +168,6 @@
                     android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -271,7 +271,6 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button14"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
@@ -284,6 +283,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -295,27 +295,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView43"
+                    android:id="@+id/꿔바로우사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_4" />
+                    app:srcCompat="@drawable/chinese_food_4" />
 
                 <ImageView
-                    android:id="@+id/imageView44"
+                    android:id="@+id/추가공기밥사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_5" />
-
-                <ImageView
-                    android:id="@+id/imageView45"
-                    android:layout_width="100dp"
-                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_6" />
+                    app:srcCompat="@drawable/chinese_food_5" />
             </LinearLayout>
         </LinearLayout>
 
@@ -330,39 +325,26 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView70"
+                    android:id="@+id/꿔바로우"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="토마토파스타"
+                    android:text="꿔바로우"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView71"
+                    android:id="@+id/추가공기밥"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="크림파스타"
-                    android:textColor="#090909"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/textView72"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="크림빠네파스타"
+                    android:text="추가 공기밥"
                     android:textColor="#090909"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -379,39 +361,27 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView73"
+                    android:id="@+id/꿔바로우가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="5900원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="5900원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView75"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="7900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/추가공기밥가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="1000원"
                     android:textColor="#090909"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -429,7 +399,7 @@
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="45dp"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="60dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
                     android:onClick="reduceOrder25"
@@ -464,7 +434,7 @@
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="45dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="100dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
                     android:onClick="reduceOrder26"
@@ -495,41 +465,6 @@
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="30dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder27"
-                    android:text="@string/minus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/quantity_view27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="5dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder27"
-                    android:text="@string/plus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -540,270 +475,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView46"
-                    android:layout_width="100dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="18dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_7" />
-
-                <ImageView
-                    android:id="@+id/imageView47"
-                    android:layout_width="100dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_8" />
-
-                <ImageView
-                    android:id="@+id/imageView48"
-                    android:layout_width="100dp"
-                    android:layout_height="120dp"
-                    android:layout_marginRight="18dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/western_food_9" />
-            </LinearLayout>
+                android:orientation="horizontal"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView76"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="로제파스타"
-                    android:textColor="#090909"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/textView77"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="명란로제파스타"
-                    android:textColor="#090909"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/textView78"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="명란크림파스타"
-                    android:textColor="#090909"
-                    android:textSize="20sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView79"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="5900원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView80"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="6900원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView81"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="18dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="6900원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="25dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder28"
-                    android:text="@string/minus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/quantity_view28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="5dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder28"
-                    android:text="@string/plus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="30dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder29"
-                    android:text="@string/minus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/quantity_view29"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="5dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder29"
-                    android:text="@string/plus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="30dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder30"
-                    android:text="@string/minus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/quantity_view30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/malgunbd"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="5dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder30"
-                    android:text="@string/plus"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/right5"
-                    android:layout_width="53dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="190dp"
-                    android:layout_marginTop="18dp"
-                    app:srcCompat="@android:drawable/ic_media_ff" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_marginTop="190dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -822,7 +504,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
