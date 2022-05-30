@@ -378,7 +378,7 @@
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
             <ImageView
-                android:id="@+id/right1"
+                android:id="@+id/right2"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="10dp"
