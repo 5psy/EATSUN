@@ -6,19 +6,22 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.annotations.Nullable;
 
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class countdown extends AppCompatActivity {
-    private static final long START_TIME_IN_MILLIS = 2400000;
-    private long mTimeLeftMillis = START_TIME_IN_MILLIS;
+//    private static final long START_TIME_IN_MILLIS = 2400000;
+ //ㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑ   private long mTimeLeftMillis = START_TIME_IN_MILLIS;
     TextView countdown_tv;
     Button buttonenter, buttonexit;
-    CountDownTimer CountDownTimer;
-    boolean TimerRunning;
+ //   CountDownTimer CountDownTimer;
+ //   boolean TimerRunning;
+    TextView textView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,49 +32,79 @@ public class countdown extends AppCompatActivity {
         buttonexit = findViewById(R.id.exit);
         countdown_tv = findViewById(R.id.countdown_tv);
 
-        buttonenter.setOnClickListener(new View.OnClickListener() {
+/*        buttonenter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startTimer();
             }
-        });
+        });*/
+        textView = findViewById(R.id.countdown_tv);
+
+        long duration = TimeUnit.MINUTES.toMillis(40);
+        new CountDownTimer(duration, 1000) {
+            @Override
+            public void onTick(long l) {
+
+                String sDuration = String.format(Locale.ENGLISH,"%02d:%02d"
+                        , TimeUnit.MILLISECONDS.toMinutes(l)
+                        , TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));   //40분 사용시간 시작
+
+                        /*TimeUnit.MILLISECONDS.toSeconds(l) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MICROSECONDS.toMinutes(l)));*/
+
+                textView.setText(sDuration);
+            }
+
+            @Override
+            public void onFinish() {
+                textView.setVisibility(View.GONE);
+
+                Toast.makeText(getApplicationContext()
+                        ,"Countdown timer has ended", Toast.LENGTH_SHORT).show();            //40분 사용시간 끝나면
+
+            }
+        }.start();
 
         buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //resetTimer();
-                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
+                Intent intent = new Intent(getApplicationContext(), mainScreen.class);     //퇴장버튼 누르면 메인화면으로..
                 startActivity(intent);
             }
         });
     }
-    private void startTimer(){
-        CountDownTimer = new CountDownTimer(mTimeLeftMillis, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                mTimeLeftMillis = millisUntilFinished;
-                updateCountDownText();
-            }
-            @Override
-            public void onFinish() {
-                countdown_tv.setText("00:00");
-            }
-        }.start();
+/*    private void startTimer(){
+    CountDownTimer = new CountDownTimer(mTimeLeftMillis, 1000) {
+        @Override
+        public void onTick(long millisUntilFinished) {
+            mTimeLeftMillis = millisUntilFinished;
+            updateCountDownText();
+        }
+        @Override
+        public void onFinish() {
+            countdown_tv.setText("00:00");
+            textView.setVisibility(View.GONE);
 
-        TimerRunning = false;
-    }
-/*    private void resetTimer(){
-        CountDownTimer.cancel();
-        TimerRunning = true;
-        mTimeLeftMillis = START_TIME_IN_MILLIS;
-        updateCountDownText();
-    }*/
-    private void updateCountDownText(){
+            Toast.makeText(getApplicationContext()
+                    ,"Countdown timer has ended", Toast.LENGTH_SHORT).show();
+        }
+    }.start();
+
+    TimerRunning = false;
+}*/
+    /*    private void resetTimer(){
+            CountDownTimer.cancel();
+            TimerRunning = true;
+            mTimeLeftMillis = START_TIME_IN_MILLIS;
+            updateCountDownText();
+        }*/
+    /*private void updateCountDownText(){
         int min = (int) (mTimeLeftMillis/1000)/60;
         int sec = (int) (mTimeLeftMillis/1000)%60;
         String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
         countdown_tv.setText(timeLeftFormatted);
-    }
+    }*/
 }
 
 
