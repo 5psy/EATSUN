@@ -30,7 +30,7 @@
                 android:layout_width="100dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="160dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/malgun"
                 android:gravity="center"
                 android:text="한식"
@@ -331,7 +331,7 @@
                     android:layout_width="53dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="145dp"
-                    android:layout_marginTop="327dp"
+                    android:layout_marginTop="325dp"
                     app:srcCompat="@android:drawable/ic_media_rew" />
             </LinearLayout>
         </LinearLayout>
@@ -363,7 +363,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="1dp"
                 android:background="#66B2B2B2"
                 android:fontFamily="@font/malgunbd"
                 android:text="결제"
