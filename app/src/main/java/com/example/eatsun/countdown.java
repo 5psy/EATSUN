@@ -28,21 +28,18 @@ public class countdown extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         setContentView(R.layout.sun_14_2);
+        setContentView(R.layout.sun_14_2);
 
         buttonenter = findViewById(R.id.enter);
         buttonexit = findViewById(R.id.exit);
         countdown_tv = findViewById(R.id.countdown_tv);
-
 /*        buttonenter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startTimer();
             }
         });*/
-
         textView = findViewById(R.id.countdown_tv);
-
         long duration = TimeUnit.MINUTES.toMillis(40);
         new CountDownTimer(duration, 1000) {
             @Override
@@ -54,10 +51,8 @@ public class countdown extends AppCompatActivity {
 
                 textView.setText(sDuration);
             }
-
             @Override
             public void onFinish() {
-                //textView.setVisibility(View.GONE);
                 Toast.makeText(getApplicationContext(),"퇴장하셨습니다.", Toast.LENGTH_SHORT).show();   //40분 사용시간 끝나면
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -68,7 +63,6 @@ public class countdown extends AppCompatActivity {
                 }, 1000);
             }
         }.start();
-
         ImageView back13 = (ImageView) findViewById(R.id.back13);
         back13.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +71,6 @@ public class countdown extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -30,7 +30,6 @@ public class sun_14_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
 
-
         button = findViewById(R.id.enter);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,11 +56,8 @@ public class sun_14_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         textView = findViewById(R.id.countdown_tv);
-
         long duration = TimeUnit.MINUTES.toMillis(10);
-
         new CountDownTimer(duration, 1000) {
             @Override
             public void onTick(long l) {
@@ -74,7 +70,6 @@ public class sun_14_2 extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                //textView.setVisibility(View.GONE);
                 Toast.makeText(getApplicationContext(),"입장하셨습니다.", Toast.LENGTH_SHORT).show();
                 new Handler().postDelayed(new Runnable() {
                     @Override

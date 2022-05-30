@@ -18,7 +18,7 @@ public class sun_11_4 extends AppCompatActivity {
     private int checkNum = 0;
 
     @Override
-    protected  void onCreate(@Nullable Bundle saveInstanceState) {
+    protected void onCreate(@Nullable Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_4);
 
@@ -70,8 +70,6 @@ public class sun_11_4 extends AppCompatActivity {
         if (check == 21) {
             price = 4000;
             menu21Price = num * price;
-            //TextView quantityView = findViewById(R.id.price_view1);
-            //quantityView.setText(String.valueOf(menu1Price));
             displayTotalPrice();
         }
     }
