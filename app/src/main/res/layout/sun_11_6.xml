@@ -178,20 +178,19 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button29"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="25dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder4"
+                    android:onClick="reduceOrder31"
                     android:text="@string/minus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/quantity_view20"
+                    android:id="@+id/quantity_view31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -202,33 +201,31 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button30"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder4"
+                    android:onClick="plusOrder31"
                     android:text="@string/plus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button31"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="30dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder5"
+                    android:onClick="reduceOrder32"
                     android:text="@string/minus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/quantity_view21"
+                    android:id="@+id/quantity_view32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -239,33 +236,31 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button32"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder5"
+                    android:onClick="plusOrder32"
                     android:text="@string/plus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button33"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="30dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder6"
+                    android:onClick="reduceOrder33"
                     android:text="@string/minus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/quantity_view22"
+                    android:id="@+id/quantity_view33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -276,13 +271,12 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button34"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder6"
+                    android:onClick="plusOrder33"
                     android:text="@string/plus"
                     android:textColor="#000000"
                     android:textSize="16sp"
@@ -403,20 +397,19 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button35"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="60dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder7"
+                    android:onClick="reduceOrder34"
                     android:text="@string/minus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/quantity_view23"
+                    android:id="@+id/quantity_view34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -427,33 +420,31 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button36"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder7"
+                    android:onClick="plusOrder34"
                     android:text="@string/plus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button37"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="100dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="reduceOrder8"
+                    android:onClick="reduceOrder35"
                     android:text="@string/minus"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/quantity_view24"
+                    android:id="@+id/quantity_view35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -464,13 +455,12 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button38"
                     android:layout_width="40dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="5dp"
                     android:backgroundTint="#00FFFFFF"
                     android:fontFamily="@font/malgunbd"
-                    android:onClick="plusOrder8"
+                    android:onClick="plusOrder35"
                     android:text="@string/plus"
                     android:textColor="#000000"
                     android:textSize="16sp"
