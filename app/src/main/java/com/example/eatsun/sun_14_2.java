@@ -3,6 +3,7 @@ package com.example.eatsun;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -73,9 +74,15 @@ public class sun_14_2 extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                textView.setVisibility(View.GONE);
-
-                Toast.makeText(getApplicationContext(),"Countdown timer has ended", Toast.LENGTH_SHORT).show();
+                //textView.setVisibility(View.GONE);
+                Toast.makeText(getApplicationContext(),"입장하셨습니다.", Toast.LENGTH_SHORT).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(sun_14_2.this, countdown.class);                    // 자동 화면전환
+                        startActivity(intent);
+                    }
+                }, 1000);
             }
         }.start();
     }
