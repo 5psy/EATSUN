@@ -19,14 +19,14 @@
                 android:id="@+id/back11"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
                 android:id="@+id/textView82"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginLeft="180dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
@@ -88,7 +88,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -100,7 +99,6 @@
                     android:id="@+id/textView84"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -112,7 +110,6 @@
                     android:id="@+id/textView85"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
@@ -138,7 +135,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -151,7 +147,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -164,7 +159,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
@@ -172,6 +166,121 @@
                     android:text="5900원"
                     android:textColor="#090909"
                     android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder31"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder31"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder32"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder32"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder33"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder33"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -220,7 +329,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -232,7 +340,6 @@
                     android:id="@+id/textView90"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
@@ -258,7 +365,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
@@ -271,7 +377,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
@@ -284,6 +389,86 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="60dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder34"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder34"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="100dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder35"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder35"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
@@ -293,24 +478,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView57"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginTop="230dp"
-                    android:layout_weight="1"
-                    android:background="#66292323"
+                    android:id="@+id/left5"
+                    android:layout_width="53dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginTop="153dp"
                     app:srcCompat="@android:drawable/ic_media_rew" />
 
-                <ImageView
-                    android:id="@+id/imageView58"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="230dp"
-                    android:layout_marginRight="18dp"
-                    android:layout_weight="1"
-                    android:background="#66292323"
-                    app:srcCompat="@android:drawable/ic_media_ff" />
             </LinearLayout>
         </LinearLayout>
 
@@ -319,14 +493,32 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/malgunbd"
+                android:text="총 주문금액  "
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_price_view"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/malgunbd"
+                android:textSize="24sp" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="18dp"
-                android:layout_weight="1"
                 android:background="#66B2B2B2"
                 android:fontFamily="@font/malgunbd"
                 android:text="결제"
