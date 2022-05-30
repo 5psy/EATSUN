@@ -38,6 +38,15 @@ public class sun_11_6 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.left5);
+        ic_media_ff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), sun_11_5.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void plusOrder31 (View view){

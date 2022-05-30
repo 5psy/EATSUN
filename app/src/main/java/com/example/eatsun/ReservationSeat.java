@@ -3,12 +3,10 @@ package com.example.eatsun;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ToggleButton;
 
 public class ReservationSeat extends AppCompatActivity {
 
@@ -27,7 +25,7 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView ic_media_ff = (ImageView) findViewById(R.id.right2);
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.right1);
         ic_media_ff.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

@@ -787,7 +787,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/right3"
+                    android:id="@+id/right5"
                     android:layout_width="53dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="190dp"

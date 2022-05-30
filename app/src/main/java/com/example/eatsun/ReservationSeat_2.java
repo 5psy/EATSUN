@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
 public class ReservationSeat_2 extends AppCompatActivity {
 
@@ -36,7 +35,7 @@ public class ReservationSeat_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView ic_media_ff = (ImageView) findViewById(R.id.right1);
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.right2);
         ic_media_ff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
