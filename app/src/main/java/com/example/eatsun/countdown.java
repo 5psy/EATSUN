@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,12 +16,12 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class countdown extends AppCompatActivity {
-//    private static final long START_TIME_IN_MILLIS = 2400000;
- //ㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑ   private long mTimeLeftMillis = START_TIME_IN_MILLIS;
+//  private static final long START_TIME_IN_MILLIS = 2400000;
+//  private long mTimeLeftMillis = START_TIME_IN_MILLIS;
     TextView countdown_tv;
     Button buttonenter, buttonexit;
- //   CountDownTimer CountDownTimer;
- //   boolean TimerRunning;
+ //  CountDownTimer CountDownTimer;
+ //  boolean TimerRunning;
     TextView textView;
 
     @Override
@@ -38,6 +39,7 @@ public class countdown extends AppCompatActivity {
                 startTimer();
             }
         });*/
+
         textView = findViewById(R.id.countdown_tv);
 
         long duration = TimeUnit.MINUTES.toMillis(40);
@@ -49,9 +51,6 @@ public class countdown extends AppCompatActivity {
                         , TimeUnit.MILLISECONDS.toMinutes(l)
                         , TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));   //40분 사용시간 시작
 
-                        /*TimeUnit.MILLISECONDS.toSeconds(l) -
-                                TimeUnit.MINUTES.toSeconds(TimeUnit.MICROSECONDS.toMinutes(l)));*/
-
                 textView.setText(sDuration);
             }
 
@@ -59,16 +58,25 @@ public class countdown extends AppCompatActivity {
             public void onFinish() {
                 textView.setVisibility(View.GONE);
 
-                Toast.makeText(getApplicationContext()
-                        ,"Countdown timer has ended", Toast.LENGTH_SHORT).show();            //40분 사용시간 끝나면
-
+                Toast.makeText(getApplicationContext(),"Countdown timer has ended", Toast.LENGTH_SHORT).show();            //40분 사용시간 끝나면
             }
         }.start();
+
+        ImageView back13 = (ImageView) findViewById(R.id.back13);
+        back13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
+                startActivity(intent);
+            }
+        });
 
         buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //resetTimer();
+                Toast toast = Toast.makeText(getApplicationContext(), "퇴장하셨습니다.",Toast.LENGTH_SHORT);
+                toast.show();
                 Intent intent = new Intent(getApplicationContext(), mainScreen.class);     //퇴장버튼 누르면 메인화면으로..
                 startActivity(intent);
             }

@@ -20,7 +20,7 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class sun_14_2 extends AppCompatActivity {
-    Button button;
+    Button button, buttonexit;
     TextView textView;
 
 
@@ -34,8 +34,18 @@ public class sun_14_2 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "입장하셨습니다.",Toast.LENGTH_SHORT);
+                toast.show();
                 Intent intent = new Intent(sun_14_2.this,countdown.class);
                 startActivity(intent);
+            }
+        });
+        buttonexit = findViewById(R.id.exit);
+        buttonexit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "입장 버튼 클릭 후 퇴장 가능합니다.",Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
         ImageView back13 = (ImageView) findViewById(R.id.back13);
@@ -58,9 +68,6 @@ public class sun_14_2 extends AppCompatActivity {
                 , TimeUnit.MILLISECONDS.toMinutes(l)
                 ,TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
 
-                        /*TimeUnit.MILLISECONDS.toSeconds(l) -
-                TimeUnit.MINUTES.toSeconds(TimeUnit.MICROSECONDS.toMinutes(l)));*/
-
                 textView.setText(sDuration);
             }
 
@@ -68,18 +75,8 @@ public class sun_14_2 extends AppCompatActivity {
             public void onFinish() {
                 textView.setVisibility(View.GONE);
 
-                Toast.makeText(getApplicationContext()
-                ,"Countdown timer has ended", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(getApplicationContext(),"Countdown timer has ended", Toast.LENGTH_SHORT).show();
             }
         }.start();
-/*        button = findViewById(R.id.exit);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
-                startActivity(intent);
-            }
-        });*/
     }
 }
