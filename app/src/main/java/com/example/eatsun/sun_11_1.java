@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_1 extends AppCompatActivity {
@@ -46,7 +45,7 @@ public class sun_11_1 extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-        ImageView ic_media_ff = (ImageView) findViewById(R.id.next);
+        ImageView ic_media_ff = (ImageView) findViewById(R.id.right3);
         ic_media_ff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

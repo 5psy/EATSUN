@@ -114,6 +114,13 @@
                 android:layout_marginLeft="55dp"
                 android:backgroundTint="@color/button_background_color"
                 android:text="81" />
+
+            <TextView
+                android:id="@+id/partition"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="#B5B3A9" />
         </LinearLayout>
 
         <LinearLayout
@@ -429,7 +436,7 @@
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <ImageView
-                android:id="@+id/right2"
+                android:id="@+id/right1"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="170dp"

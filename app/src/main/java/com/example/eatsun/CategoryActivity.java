@@ -6,7 +6,6 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.ImageView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CategoryActivity extends AppCompatActivity{
@@ -49,14 +48,14 @@ public class CategoryActivity extends AppCompatActivity{
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_11_6.class);
+                Intent intent = new Intent(getApplicationContext(), sun_11_5.class);
                 startActivity(intent);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_11_5.class);
+                Intent intent = new Intent(getApplicationContext(), sun_11_6.class);
                 startActivity(intent);
             }
         });

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scroll7"
+    android:id="@+id/scroll6"
     android:background="#66B2B2B2">
 
     <LinearLayout
@@ -16,21 +16,22 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/back11"
+                android:id="@+id/back10"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <TextView
-                android:id="@+id/textView82"
-                android:layout_width="match_parent"
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:layout_marginLeft="180dp"
+                android:layout_marginLeft="160dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/malgunbd"
                 android:gravity="center"
-                android:text="중식"
+                android:text="양식"
                 android:textColor="#090909"
                 android:textSize="34sp" />
         </RelativeLayout>
@@ -46,30 +47,30 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView52"
+                    android:id="@+id/등심돈가스사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chinese_food_1" />
+                    app:srcCompat="@drawable/western_food_1" />
 
                 <ImageView
-                    android:id="@+id/imageView53"
+                    android:id="@+id/고구마돈가스사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chinese_food_2" />
+                    app:srcCompat="@drawable/western_food_2" />
 
                 <ImageView
-                    android:id="@+id/imageView54"
+                    android:id="@+id/치즈돈가스사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chinese_food_3" />
+                    app:srcCompat="@drawable/western_food_3" />
             </LinearLayout>
         </LinearLayout>
 
@@ -84,40 +85,37 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView83"
+                    android:id="@+id/등심돈가스"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="고기짬뽕"
+                    android:text="등심 돈가스"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView84"
+                    android:id="@+id/고구마돈가스"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="고기짬뽕밥"
+                    android:text="고구마 돈가스"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView85"
+                    android:id="@+id/치즈돈가스"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="중화덮밥"
+                    android:text="치즈 돈가스"
                     android:textColor="#090909"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -131,15 +129,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView86"
+                    android:id="@+id/등심돈가스가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="5000원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/고구마돈가스가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="5500원"
@@ -147,26 +155,11 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView87"
+                    android:id="@+id/치즈돈가스가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="5500원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView88"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="75dp"
                     android:layout_marginRight="18dp"
-                    android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="5900원"
@@ -177,6 +170,122 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder27"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder27"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder28"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder28"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder29"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder29"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
@@ -186,22 +295,27 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView55"
+                    android:id="@+id/토마토파스타사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chinese_food_4" />
+                    app:srcCompat="@drawable/western_food_4" />
 
                 <ImageView
-                    android:id="@+id/imageView56"
+                    android:id="@+id/크림파스타사진"
                     android:layout_width="100dp"
                     android:layout_height="120dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/western_food_5" />
+
+                <ImageView
+                    android:id="@+id/크림빠네파스타사진"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chinese_food_5" />
+                    app:srcCompat="@drawable/western_food_6" />
             </LinearLayout>
         </LinearLayout>
 
@@ -216,7 +330,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView89"
+                    android:id="@+id/토마토파스타"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
@@ -224,20 +338,31 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="꿔바로우"
+                    android:text="토마토파스타"
                     android:textColor="#090909"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView90"
+                    android:id="@+id/크림파스타"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="추가 공기밥"
+                    android:text="크림파스타"
+                    android:textColor="#090909"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/크림빠네파스타"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="크림빠네파스타"
                     android:textColor="#090909"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -254,31 +379,191 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView91"
+                    android:id="@+id/토마토파스타가격"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="5900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/크림파스타가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="5900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/크림빠네파스타가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="18dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
                     android:text="7900원"
                     android:textColor="#090909"
                     android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder30"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView92"
+                    android:id="@+id/quantity_view30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder30"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder31"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder31"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder32"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder32"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/로제파스타사진"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/western_food_7" />
+
+                <ImageView
+                    android:id="@+id/명란로제파스타사진"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/western_food_8" />
+
+                <ImageView
+                    android:id="@+id/명란크림파스타사진"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
                     android:layout_marginRight="18dp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/malgunbd"
-                    android:gravity="center"
-                    android:text="1000원"
-                    android:textColor="#090909"
-                    android:textSize="16sp" />
+                    app:srcCompat="@drawable/western_food_9" />
             </LinearLayout>
         </LinearLayout>
 
@@ -292,25 +577,38 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView57"
+                <TextView
+                    android:id="@+id/로제파스타"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
-                    android:layout_marginTop="230dp"
-                    android:layout_weight="1"
-                    android:background="#66292323"
-                    app:srcCompat="@android:drawable/ic_media_rew" />
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="로제파스타"
+                    android:textColor="#090909"
+                    android:textSize="20sp" />
 
-                <ImageView
-                    android:id="@+id/imageView58"
+                <TextView
+                    android:id="@+id/명란로제파스타"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="230dp"
-                    android:layout_marginRight="18dp"
-                    android:layout_weight="1"
-                    android:background="#66292323"
-                    app:srcCompat="@android:drawable/ic_media_ff" />
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="명란로제파스타"
+                    android:textColor="#090909"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/명란크림파스타"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="명란크림파스타"
+                    android:textColor="#090909"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -319,14 +617,207 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/로제파스타가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="5900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/명란로제파스타가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="6900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/명란크림파스타가격"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/malgunbd"
+                    android:gravity="center"
+                    android:text="6900원"
+                    android:textColor="#090909"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder33"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder33"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder34"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder34"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="reduceOrder35"
+                    android:text="@string/minus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_view35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/malgunbd"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/malgunbd"
+                    android:onClick="plusOrder35"
+                    android:text="@string/plus"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/malgunbd"
+                android:text="총 주문금액  "
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_price_view"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/malgunbd"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="18dp"
-                android:layout_weight="1"
                 android:background="#66B2B2B2"
                 android:fontFamily="@font/malgunbd"
                 android:text="결제"
