@@ -308,7 +308,7 @@ public class sun_11_3 extends AppCompatActivity{
 
             public void displayTotalPrice() {
                 int totalPrice = menu12Price + menu13Price + menu14Price + menu15Price + menu16Price + menu17Price + menu18Price + menu19Price + menu20Price;
-                TextView quantityView = findViewById(R.id.total_price_view2);
+                TextView quantityView = findViewById(R.id.total_price_view);
                 quantityView.setText(String.valueOf(totalPrice));
             }
         }
