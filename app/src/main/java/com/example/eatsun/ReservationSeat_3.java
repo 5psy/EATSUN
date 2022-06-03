@@ -6,6 +6,7 @@ import android.widget.ImageView;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,19 @@ public class ReservationSeat_3 extends AppCompatActivity {
 
     private Button button7;
 
+    private long pressedTime = 0;
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis() > pressedTime + 2000 ){
+            pressedTime = System.currentTimeMillis();
+            Toast.makeText(this, "한 번 더 누르면 종료됩니다.",Toast.LENGTH_SHORT).show();
+        }
+        else if (System.currentTimeMillis() <= pressedTime + 2000){
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

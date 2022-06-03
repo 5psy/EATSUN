@@ -12,6 +12,20 @@ import androidx.appcompat.app.AppCompatActivity;
 public class sun_14_1 extends AppCompatActivity {
     Button button;
 
+    private long pressedTime = 0;
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis() > pressedTime + 2000 ){
+            pressedTime = System.currentTimeMillis();
+            Toast.makeText(this, "한 번 더 누르면 종료됩니다.",Toast.LENGTH_SHORT).show();
+        }
+        else if (System.currentTimeMillis() <= pressedTime + 2000){
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
