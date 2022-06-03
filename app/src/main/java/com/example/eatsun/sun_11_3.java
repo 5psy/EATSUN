@@ -110,7 +110,7 @@ public class sun_11_3 extends AppCompatActivity{
         displayMenuNum(menu20Num, checkNum);
     }
 
-    public void reduceOrder1 (View view){
+    public void reduceOrder12 (View view){
         if (menu12Num <= 0) {
             menu12Num = 0;
             Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
@@ -252,56 +252,38 @@ public class sun_11_3 extends AppCompatActivity{
             if (check == 12) {
                 price = 3500;
                 menu12Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view1);
-                //quantityView.setText(String.valueOf(menu1Price));
                 displayTotalPrice();
             } else if (check == 13) {
                 price = 3500;
                 menu13Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view2);
-                //quantityView.setText(String.valueOf(menu2Price));
                 displayTotalPrice();
             } else if (check == 14) {
                 price = 4000;
                 menu14Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view3);
-                //quantityView.setText(String.valueOf(menu3Price));
                 displayTotalPrice();
             } else if (check == 15) {
                 price = 4000;
                 menu15Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view2);
-                //quantityView.setText(String.valueOf(menu2Price));
                 displayTotalPrice();
             } else if (check == 16) {
                 price = 4000;
                 menu16Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view3);
-                //quantityView.setText(String.valueOf(menu3Price));
                 displayTotalPrice();
             } else if (check == 17) {
                 price = 3000;
                 menu17Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view2);
-                //quantityView.setText(String.valueOf(menu2Price));
                 displayTotalPrice();
             } else if (check == 18) {
                 price = 3000;
                 menu18Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view3);
-                //quantityView.setText(String.valueOf(menu3Price));
                 displayTotalPrice();
             } else if (check == 19) {
                 price = 3000;
                 menu19Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view2);
-                //quantityView.setText(String.valueOf(menu2Price));
                 displayTotalPrice();
             } else if (check == 20) {
                 price = 5000;
                 menu20Price = num * price;
-                //TextView quantityView = findViewById(R.id.price_view2);
-                //quantityView.setText(String.valueOf(menu2Price));
                 displayTotalPrice();
             }
         }

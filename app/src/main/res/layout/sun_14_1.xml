@@ -59,13 +59,13 @@
         android:backgroundTint="#CCB2B2B2"
         android:fontFamily="@font/malgunbd"
         android:gravity="center"
-        android:text="000님, 예약 정보가 없습니다."
+        android:text="예약 정보가 없습니다."
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/reservationseat"
         android:layout_width="263dp"
         android:layout_height="90dp"
         android:layout_marginLeft="75dp"
@@ -79,7 +79,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/logout"
         android:layout_width="263dp"
         android:layout_height="90dp"
         android:layout_marginLeft="75dp"
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/enter"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginLeft="40dp"
@@ -109,7 +109,7 @@
             android:textSize="38sp" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/exit"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginLeft="225dp"
