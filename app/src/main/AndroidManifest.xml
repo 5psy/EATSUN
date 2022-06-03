@@ -64,6 +64,9 @@
         <activity
             android:name=".payment"
             android:exported="true"/>
+        <activity
+            android:name=".sun_14_1"
+            android:exported="true"/>
 
 
     </application>
