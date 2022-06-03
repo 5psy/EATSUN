@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_14_1 extends AppCompatActivity {
@@ -43,7 +42,7 @@ public class sun_14_1 extends AppCompatActivity {
                 toast.show();
             }
         });
-        button = findViewById(R.id.reservationseat);
+        button = findViewById(R.id.pay6);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
