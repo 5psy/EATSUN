@@ -53,6 +53,15 @@ public class sun_11_1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        button = findViewById(R.id.payment);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), payment.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
             public void plusOrder1 (View view){

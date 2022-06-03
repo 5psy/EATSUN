@@ -23,5 +23,14 @@ public class payment extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView card = (ImageView) findViewById(R.id.card);
+        card.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), sun_14_2.class);
+                startActivity(intent);
+            }
+        });
     }
 }
