@@ -108,7 +108,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/치즈돈가스"
+                    android:id="@+id/mypage2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="18dp"
@@ -133,7 +133,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/등심돈가스가격"
+                    android:id="@+id/line"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -355,7 +355,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/크림빠네파스타"
+                    android:id="@+id/대기번호"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -379,7 +379,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/토마토파스타가격"
+                    android:id="@+id/사용시간"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
