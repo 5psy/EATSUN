@@ -110,7 +110,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/reservationseat"
+            android:id="@+id/pay6"
             android:layout_width="263dp"
             android:layout_height="90dp"
             android:layout_marginLeft="75dp"

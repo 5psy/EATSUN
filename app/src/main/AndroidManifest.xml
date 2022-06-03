@@ -61,6 +61,9 @@
         <activity
             android:name=".sun_11_4"
             android:exported="true"/>
+        <activity
+            android:name="payment"
+            android:exported="true"/>
 
 
     </application>
