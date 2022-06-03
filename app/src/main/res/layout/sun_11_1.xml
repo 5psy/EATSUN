@@ -834,7 +834,7 @@
                     android:fontFamily="@font/malgunbd"
                     android:textSize="24sp" />
                 <Button
-                    android:id="@+id/pay1"
+                    android:id="@+id/결제"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"

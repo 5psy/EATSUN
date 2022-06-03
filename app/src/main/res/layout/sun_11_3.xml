@@ -917,7 +917,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/pay3"
+                android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"

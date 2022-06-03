@@ -11,8 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_1 extends AppCompatActivity {
-
-    private Button button;
+    Button button;
 
     private String lowestNumMessage = "가장 낮은 수량입니다.";
     private int menu1Num = 0;
@@ -51,15 +50,6 @@ public class sun_11_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sun_11_2.class);
-                startActivity(intent);
-            }
-        });
-        button=findViewById(R.id.pay1);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), payment.class);
                 startActivity(intent);
             }
         });
