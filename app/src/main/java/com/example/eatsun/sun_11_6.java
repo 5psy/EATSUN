@@ -3,6 +3,7 @@ package com.example.eatsun;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_6 extends AppCompatActivity {
 
+    private Button button;
     private String lowestNumMessage = "가장 낮은 수량입니다.";
     private int menu27Num = 0;
     private int menu28Num = 0;
@@ -43,6 +45,14 @@ public class sun_11_6 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+        button = findViewById(R.id.pay6);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), payment.class);
                 startActivity(intent);
             }
         });

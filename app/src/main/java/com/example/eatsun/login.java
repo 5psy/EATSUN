@@ -22,6 +22,7 @@ public class login extends AppCompatActivity {
     private FirebaseAuth nFirebaseAuth;
     private DatabaseReference nDatabaseRef;
     private EditText nEtid, nEtpwd;
+    public static String loginId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +39,14 @@ public class login extends AppCompatActivity {
         button_lg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strid = nEtid.getText().toString();
-                String strpwd = nEtpwd.getText().toString();
+                String emailid = nEtid.getText().toString();
+                String passwd = nEtpwd.getText().toString();
 
-                nFirebaseAuth.signInWithEmailAndPassword(strid, strpwd).addOnCompleteListener(login.this, new OnCompleteListener<AuthResult>() {
+                nFirebaseAuth.signInWithEmailAndPassword(emailid, passwd).addOnCompleteListener(login.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+                            loginId = emailid;
                             Intent intent2 = new Intent(login.this, mainScreen.class);
                             startActivity(intent2);
                             finish();

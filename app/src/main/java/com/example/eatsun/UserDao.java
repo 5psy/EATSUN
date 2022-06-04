@@ -8,7 +8,7 @@ import androidx.room.Update;
 
 import java.util.List;
 
-@Dao
+/*@Dao
 public interface UserDao {
     @Insert
     void setInsertUser(Userroom user);
@@ -22,4 +22,4 @@ public interface UserDao {
     @Query("Select * From Userroom")
     List<Userroom>getUserAll();
 
-}
+}*/

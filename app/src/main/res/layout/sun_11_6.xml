@@ -812,7 +812,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/reservationseat"
+                android:id="@+id/pay6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"

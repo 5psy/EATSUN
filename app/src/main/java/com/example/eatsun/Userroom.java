@@ -3,7 +3,7 @@ package com.example.eatsun;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+/*@Entity
 public class Userroom {
     @PrimaryKey(autoGenerate = true)
     private  int id = 0;  //하나의 사용자에 대한 고유 id값
@@ -35,4 +35,4 @@ public class Userroom {
     public void setFood(String food) {
         this.food = food;
     }
-}
+}*/

@@ -15,7 +15,7 @@ import androidx.room.Room;
 public class ReservationSeat_3 extends AppCompatActivity {
 
     private Button button7;
-    private UserDao oUserDao;
+    //private UserDao oUserDao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,12 +71,12 @@ public class ReservationSeat_3 extends AppCompatActivity {
         Button b22 = (Button) this.findViewById(R.id. seat22);
         Button b23 = (Button) this.findViewById(R.id. seat23);
 
-        UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "EatSun")
+        /*UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "EatSun")
                 .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
-        oUserDao = database.userDao();  //인터페이스 객체 할당 //m,n,o 달라도 문제없지?
-        Userroom user = new Userroom();
+        //oUserDao = database.userDao();  //인터페이스 객체 할당 //m,n,o 달라도 문제없지?
+        Userroom user = new Userroom();*/
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,8 +106,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("1");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("1");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -139,8 +139,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("2");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("2");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -172,8 +172,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("3");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("3");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -205,8 +205,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("4");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("4");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -238,8 +238,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("5");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("5");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -271,8 +271,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("6");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("6");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -304,8 +304,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("7");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("7");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -337,8 +337,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("8");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("8");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -370,8 +370,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("9");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("9");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -403,8 +403,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("10");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("10");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -436,8 +436,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("11");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("11");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -469,8 +469,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("12");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("12");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -502,8 +502,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("13");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("13");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -535,8 +535,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("14");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("14");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -568,8 +568,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("15");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("15");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -601,8 +601,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("16");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("16");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -634,8 +634,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("17");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("17");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -667,8 +667,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("18");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("18");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -700,8 +700,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("20");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("20");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -733,8 +733,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("21");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("21");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -766,8 +766,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b1.setSelected(false);
                 b23.setSelected(false);
 
-                user.setSeatnumber("22");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("22");
+                //oUserDao.setInsertUser(user);
 
             }
         });
@@ -799,8 +799,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b22.setSelected(false);
                 b1.setSelected(false);
 
-                user.setSeatnumber("23");
-                oUserDao.setInsertUser(user);
+                //user.setSeatnumber("23");
+                //oUserDao.setInsertUser(user);
 
             }
         });

@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_14_1 extends AppCompatActivity {
@@ -16,7 +15,7 @@ public class sun_14_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sun_14_2);
+        setContentView(R.layout.sun_14_1);
 
         ImageView back13 = (ImageView) findViewById(R.id.back12);
         back13.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +42,7 @@ public class sun_14_1 extends AppCompatActivity {
                 toast.show();
             }
         });
-        button = findViewById(R.id.reservationseat);
+        button = findViewById(R.id.confirm);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

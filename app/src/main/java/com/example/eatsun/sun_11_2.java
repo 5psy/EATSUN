@@ -7,13 +7,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_2 extends AppCompatActivity{
-    Button button;
 
+    private Button button;
     private String lowestNumMessage = "가장 낮은 수량입니다.";
     private int menu9Num = 0;
     private int menu10Num = 0;
@@ -41,6 +42,14 @@ public class sun_11_2 extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sun_11_1.class);
+                startActivity(intent);
+            }
+        });
+        button = findViewById(R.id.pay2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), payment.class);
                 startActivity(intent);
             }
         });

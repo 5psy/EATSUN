@@ -58,6 +58,12 @@
         <activity
             android:name=".sun_11_2"
             android:exported="true"/>
+        <activity
+            android:name=".sun_11_4"
+            android:exported="true"/>
+        <activity
+            android:name=".ReadingRoom"
+            android:exported="true"/>
 
 
     </application>
