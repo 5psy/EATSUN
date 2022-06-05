@@ -20,7 +20,7 @@ public class countdown extends AppCompatActivity {
 //  private static final long START_TIME_IN_MILLIS = 2400000;
 //  private long mTimeLeftMillis = START_TIME_IN_MILLIS;
     TextView countdown_tv;
-    Button buttonenter, buttonexit;
+    Button buttonenter, buttonexit, button;
  //  CountDownTimer CountDownTimer;
  //  boolean TimerRunning;
     TextView textView;
@@ -76,12 +76,23 @@ public class countdown extends AppCompatActivity {
                 }, 1000);
             }
         }.start();
-        ImageView back13 = (ImageView) findViewById(R.id.back11);
-        back13.setOnClickListener(new View.OnClickListener() {
+        ImageView back11 = (ImageView) findViewById(R.id.back11);
+        back11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), mainScreen.class);
                 startActivity(intent);
+            }
+        });
+        button = findViewById(R.id.logout);
+        button.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.",Toast.LENGTH_SHORT);
+                toast.show();
+                Intent i = new Intent(countdown.this, login.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(i);
             }
         });
         buttonexit.setOnClickListener(new View.OnClickListener() {

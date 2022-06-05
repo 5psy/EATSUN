@@ -13,7 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_4 extends AppCompatActivity {
 
-    private Button button;
+    Button pay4;
+    TextView total_price;
     private String lowestNumMessage = "가장 낮은 수량입니다.";
     private int menu27Num = 0;
     private int menu28Num = 0;
@@ -61,11 +62,13 @@ public class sun_11_4 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.pay4);
-        button.setOnClickListener(new View.OnClickListener() {
+        pay4 = (Button)findViewById(R.id.pay4);
+        total_price = (TextView)findViewById(R.id.total_price);
+        pay4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), payment.class);
+                Intent intent = new Intent(sun_11_4.this, payment.class);
+                intent.putExtra("price", total_price.getText().toString());
                 startActivity(intent);
             }
         });

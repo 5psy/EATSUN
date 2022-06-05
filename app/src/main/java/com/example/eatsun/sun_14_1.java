@@ -64,5 +64,16 @@ public class sun_14_1 extends AppCompatActivity {
                 toast.show();
             }
         });
+        button = findViewById(R.id.logout);
+        button.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.",Toast.LENGTH_SHORT);
+                toast.show();
+                Intent i = new Intent(sun_14_1.this, login.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(i);
+            }
+        });
     }
 }
