@@ -360,7 +360,7 @@ public class sun_11_1 extends AppCompatActivity {
                 }
             }
             public void displayTotalPrice() {
-                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price + menu7Num + menu8Price + menu9Price + menu10Price + menu11Price;
+                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price + menu7Price + menu8Price + menu9Price + menu10Price + menu11Price;
                 TextView quantityView = findViewById(R.id.total_price);
                 quantityView.setText(String.valueOf(totalPrice));
             }
