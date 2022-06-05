@@ -50,16 +50,10 @@
             android:name=".sun_11_1"
             android:exported="true"/>
         <activity
-            android:name=".sun_11_3"
-            android:exported="true"/>
-        <activity
-            android:name=".sun_11_5"
-            android:exported="true"/>
-        <activity
-            android:name=".sun_11_6"
-            android:exported="true"/>
-        <activity
             android:name=".sun_11_2"
+            android:exported="true"/>
+        <activity
+            android:name=".sun_11_3"
             android:exported="true"/>
         <activity
             android:name=".sun_11_4"
