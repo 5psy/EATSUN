@@ -31,8 +31,8 @@ public class sun_14_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_1);
 
-        ImageView back13 = (ImageView) findViewById(R.id.back12);
-        back13.setOnClickListener(new View.OnClickListener() {
+        ImageView back10 = (ImageView) findViewById(R.id.back10);
+        back10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), mainScreen.class);

@@ -16,7 +16,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/back10"
+                android:id="@+id/back9"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="10dp"
@@ -804,7 +804,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/total_price_view"
+                android:id="@+id/total_price"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -812,7 +812,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/pay6"
+                android:id="@+id/pay4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"

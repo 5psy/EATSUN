@@ -1,5 +1,4 @@
 package com.example.eatsun;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_1 extends AppCompatActivity {
+
     private Button button;
     private String lowestNumMessage = "가장 낮은 수량입니다.";
     private int menu1Num = 0;
@@ -50,21 +51,19 @@ public class sun_11_1 extends AppCompatActivity {
             System.exit(0);
         }
     }
-
     @Override
-    protected void onCreate(Bundle saveInstanceState){
+    protected void onCreate(@Nullable Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_1);
-
         ImageView back6 = (ImageView) findViewById(R.id.back6);
         back6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
-                    startActivity(intent);
-                }
-            });
-        button = findViewById(R.id.pay);
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+        button = findViewById(R.id.pay1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -360,10 +359,9 @@ public class sun_11_1 extends AppCompatActivity {
                     displayTotalPrice();
                 }
             }
-
             public void displayTotalPrice() {
-                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price + menu7Price + menu8Price + menu9Price + menu10Price + menu11Price;
-                TextView quantityView = findViewById(R.id.total_price_view);
+                int totalPrice = menu1Price + menu2Price + menu3Price + menu4Price + menu5Price + menu6Price + menu7Num + menu8Price + menu9Price + menu10Price + menu11Price;
+                TextView quantityView = findViewById(R.id.total_price);
                 quantityView.setText(String.valueOf(totalPrice));
             }
 }

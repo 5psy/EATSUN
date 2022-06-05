@@ -4,14 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class ReservationSeat extends AppCompatActivity {
 
     private Button button, button5;
+
+    private long pressedTime = 0;
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis() > pressedTime + 2000 ){
+            pressedTime = System.currentTimeMillis();
+            Toast.makeText(this, "한 번 더 누르면 종료됩니다.",Toast.LENGTH_SHORT).show();
+        }
+        else if (System.currentTimeMillis() <= pressedTime + 2000){
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +120,14 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+            }
+        });
+        ImageView btNext = (ImageView) findViewById(R.id.right1);
+        btNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReservationSeat.this, ReservationSeat_2.class);
+                startActivity(intent);
             }
         });
         b51.setOnClickListener(new View.OnClickListener() {

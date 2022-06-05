@@ -53,7 +53,7 @@ public class sun_11_4 extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_4);
 
-        ImageView back9 = (ImageView) findViewById(R.id.back10);
+        ImageView back9 = (ImageView) findViewById(R.id.back9);
         back9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +61,7 @@ public class sun_11_4 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.pay6);
+        button = findViewById(R.id.pay4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -294,7 +294,7 @@ public class sun_11_4 extends AppCompatActivity {
             displayTotalPrice();
         }
         else if(check == 33) {
-            price = 2900;
+            price = 5900;
             menu33Price = num * price;
             displayTotalPrice();
         }
@@ -312,7 +312,7 @@ public class sun_11_4 extends AppCompatActivity {
 
     public void displayTotalPrice() {
         int totalPrice = menu27Price + menu28Price + menu29Price + menu30Price + menu31Price + menu32Price + menu33Price + menu34Price + menu35Price;
-        TextView quantityView = findViewById(R.id.total_price_view);
+        TextView quantityView = findViewById(R.id.total_price);
         quantityView.setText(String.valueOf(totalPrice));
     }
 }

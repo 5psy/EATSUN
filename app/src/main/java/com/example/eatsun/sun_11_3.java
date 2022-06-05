@@ -11,7 +11,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class sun_11_3 extends AppCompatActivity {
+public class sun_11_3 extends AppCompatActivity{
 
     private Button button;
     private String lowestNumMessage = "가장 낮은 수량입니다.";
@@ -46,15 +46,15 @@ public class sun_11_3 extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_3);
 
-        ImageView back10 = (ImageView) findViewById(R.id.back11);
-        back10.setOnClickListener(new View.OnClickListener() {
+        ImageView back8 = (ImageView) findViewById(R.id.back8);
+        back8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.pay5);
+        button = findViewById(R.id.pay3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,8 +64,7 @@ public class sun_11_3 extends AppCompatActivity {
         });
 
     }
-
-    public void plusOrder31 (View view){
+    public void plusOrder22 (View view){
         checkNum = 22;
         menu22Num++;
         displayMenuNum(menu22Num, checkNum);
@@ -95,6 +94,59 @@ public class sun_11_3 extends AppCompatActivity {
         displayMenuNum(menu26Num, checkNum);
     }
 
+    public void reduceOrder22 (View view){
+        if (menu22Num <= 0) {
+            menu22Num = 0;
+            Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        checkNum = 22;
+        menu22Num--;
+        displayMenuNum(menu22Num, checkNum);
+    }
+
+    public void reduceOrder23 (View view){
+        if (menu23Num <= 0) {
+            menu23Num = 0;
+            Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        checkNum = 23;
+        menu23Num--;
+        displayMenuNum(menu23Num, checkNum);
+    }
+
+    public void reduceOrder24 (View view){
+        if (menu24Num <= 0) {
+            menu24Num = 0;
+            Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        checkNum = 24;
+        menu24Num--;
+        displayMenuNum(menu24Num, checkNum);
+    }
+    public void reduceOrder25 (View view){
+        if (menu25Num <= 0) {
+            menu25Num = 0;
+            Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        checkNum = 25;
+        menu25Num--;
+        displayMenuNum(menu25Num, checkNum);
+    }
+
+    public void reduceOrder26 (View view){
+        if (menu26Num <= 0) {
+            menu26Num = 0;
+            Toast.makeText(this.getApplicationContext(), lowestNumMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        checkNum = 26;
+        menu26Num--;
+        displayMenuNum(menu26Num, checkNum);
+    }
 
     public void displayMenuNum ( int num, int check) {
         if (check == 22) {
@@ -119,33 +171,37 @@ public class sun_11_3 extends AppCompatActivity {
             displaySinglePrice(num, check);
         }
     }
-    public void displaySinglePrice(int num, int check){
-        int price;
-        if (check == 22) {
-            price = 5500;
-            menu22Price = num * price;
-            displayTotalPrice();
-        } else if (check == 23) {
-            price = 5500;
-            menu23Price = num * price;
-            displayTotalPrice();
-        } else if (check == 24) {
-            price = 5900;
-            menu24Price = num * price;
-            displayTotalPrice();
-        } else if (check == 25) {
-            price = 7900;
-            menu25Price = num * price;
-            displayTotalPrice();
-        } else if (check == 26) {
-            price = 1000;
-            menu26Price = num * price;
-            displayTotalPrice();
+        public void displaySinglePrice (int num, int check) {
+            int price;
+            if (check == 22) {
+                price = 5500;
+                menu22Price = num * price;
+                displayTotalPrice();
+            } else if (check == 23) {
+                price = 5500;
+                menu23Price = num * price;
+                displayTotalPrice();
+            } else if (check == 24) {
+                price = 5900;
+                menu24Price = num * price;
+                displayTotalPrice();
+            } else if (check == 25) {
+                price = 7900;
+                menu25Price = num * price;
+                displayTotalPrice();
+            } else if (check == 26) {
+                price = 1000;
+                menu26Price = num * price;
+                displayTotalPrice();
+            }
         }
-    }
-    public void displayTotalPrice() {
-        int totalPrice = menu22Price + menu23Price + menu24Price + menu25Price + menu26Price;
-        TextView quantityView = findViewById(R.id.total_price_view);
-        quantityView.setText(String.valueOf(totalPrice));
-    }
-}
+
+            public void displayTotalPrice() {
+                int totalPrice = menu22Price + menu23Price + menu24Price + menu25Price + menu26Price ;
+                TextView quantityView = findViewById(R.id.total_price);
+                quantityView.setText(String.valueOf(totalPrice));
+            }
+        }
+
+
+

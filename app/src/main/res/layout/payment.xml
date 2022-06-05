@@ -70,7 +70,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/price"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_marginLeft="20dp"
@@ -80,7 +80,6 @@
                     android:background="#801E88E5"
                     android:fontFamily="@font/malgunbd"
                     android:gravity="center"
-                    android:text="3500"
                     android:textColor="#000000"
                     android:textSize="24sp" />
             </LinearLayout>

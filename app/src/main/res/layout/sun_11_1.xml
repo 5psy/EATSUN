@@ -1084,7 +1084,6 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1102,15 +1101,16 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/total_price_view"
+                    android:id="@+id/total_price"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="920dp"
                     android:layout_weight="0"
                     android:fontFamily="@font/malgunbd"
                     android:textSize="24sp" />
+
                 <Button
-                    android:id="@+id/pay"
+                    android:id="@+id/pay1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"

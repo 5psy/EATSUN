@@ -3,12 +3,11 @@ package com.example.eatsun;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Button;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sun_11_2 extends AppCompatActivity{
@@ -50,21 +49,20 @@ public class sun_11_2 extends AppCompatActivity{
             System.exit(0);
         }
     }
-
     @Override
-    protected  void onCreate(@Nullable Bundle saveInstanceState){
+    protected  void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.sun_11_2);
 
-        ImageView back8 = (ImageView) findViewById(R.id.back8);
-        back8.setOnClickListener(new View.OnClickListener() {
+        ImageView back7 = (ImageView) findViewById(R.id.back7);
+        back7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.pay3);
+        button = findViewById(R.id.pay2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,8 +70,8 @@ public class sun_11_2 extends AppCompatActivity{
                 startActivity(intent);
             }
         });
-
     }
+
     public void plusOrder12 (View view){
         checkNum = 12;
         menu12Num++;
@@ -132,7 +130,6 @@ public class sun_11_2 extends AppCompatActivity{
         menu21Num++;
         displayMenuNum(menu21Num, checkNum);
     }
-
     public void reduceOrder12 (View view){
         if (menu12Num <= 0) {
             menu12Num = 0;
@@ -143,7 +140,6 @@ public class sun_11_2 extends AppCompatActivity{
         menu12Num--;
         displayMenuNum(menu12Num, checkNum);
     }
-
     public void reduceOrder13 (View view){
         if (menu13Num <= 0) {
             menu13Num = 0;
@@ -165,6 +161,7 @@ public class sun_11_2 extends AppCompatActivity{
         menu14Num--;
         displayMenuNum(menu14Num, checkNum);
     }
+
     public void reduceOrder15 (View view){
         if (menu15Num <= 0) {
             menu15Num = 0;
@@ -283,7 +280,7 @@ public class sun_11_2 extends AppCompatActivity{
             displaySinglePrice(num, check);
         }
     }
-        public void displaySinglePrice (int num, int check) {
+        public void displaySinglePrice(int num, int check){
             int price;
             if (check == 12) {
                 price = 3500;
@@ -330,10 +327,7 @@ public class sun_11_2 extends AppCompatActivity{
 
             public void displayTotalPrice() {
                 int totalPrice = menu12Price + menu13Price + menu14Price + menu15Price + menu16Price + menu17Price + menu18Price + menu19Price + menu20Price + menu21Price;
-                TextView quantityView = findViewById(R.id.total_price_view);
+                TextView quantityView = findViewById(R.id.total_price);
                 quantityView.setText(String.valueOf(totalPrice));
             }
         }
-
-
-

@@ -10,13 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
-
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
@@ -61,8 +56,8 @@ public class sun_14_2 extends AppCompatActivity {
                 toast.show();
             }
         });
-        ImageView back13 = (ImageView) findViewById(R.id.back13);
-        back13.setOnClickListener(new View.OnClickListener() {
+        ImageView back11 = (ImageView) findViewById(R.id.back11);
+        back11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), mainScreen.class);

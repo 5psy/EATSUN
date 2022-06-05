@@ -76,7 +76,7 @@ public class countdown extends AppCompatActivity {
                 }, 1000);
             }
         }.start();
-        ImageView back13 = (ImageView) findViewById(R.id.back13);
+        ImageView back13 = (ImageView) findViewById(R.id.back11);
         back13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
