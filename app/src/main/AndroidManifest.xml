@@ -32,6 +32,9 @@
             android:name=".sun_14_2"
             android:exported="true"/>
         <activity
+            android:name=".sun_14_1"
+            android:exported="true"/>
+        <activity
             android:name="countdown"
             android:exported="true"/>
         <activity
@@ -65,7 +68,7 @@
             android:name=".payment"
             android:exported="true"/>
         <activity
-            android:name=".sun_14_1"
+            android:name=".ReadingRoom"
             android:exported="true"/>
 
 

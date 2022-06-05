@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ImageView;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -85,6 +86,14 @@ public class register extends AppCompatActivity {
                         }
                     }
                 });
+            }
+        });
+        ImageView back1 = (ImageView) findViewById(R.id.back1);
+        back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), login.class);
+                startActivity(intent);
             }
         });
     }
