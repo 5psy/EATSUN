@@ -95,7 +95,6 @@ public class ReservationSeat_3 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 b1.setSelected(true);
                 b2.setSelected(false);
                 b3.setSelected(false);
@@ -686,6 +685,39 @@ public class ReservationSeat_3 extends AppCompatActivity {
 
             }
         });
+        b19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                b19.setSelected(true);
+                b2.setSelected(false);
+                b3.setSelected(false);
+                b4.setSelected(false);
+                b5.setSelected(false);
+                b6.setSelected(false);
+                b7.setSelected(false);
+                b8.setSelected(false);
+                b9.setSelected(false);
+                b10.setSelected(false);
+                b11.setSelected(false);
+                b12.setSelected(false);
+                b13.setSelected(false);
+                b14.setSelected(false);
+                b15.setSelected(false);
+                b16.setSelected(false);
+                b17.setSelected(false);
+                b18.setSelected(false);
+                b1.setSelected(false);
+                b20.setSelected(false);
+                b21.setSelected(false);
+                b22.setSelected(false);
+                b23.setSelected(false);
+
+                //user.setSeatnumber("19");
+                //oUserDao.setInsertUser(user);
+
+            }
+        });
         b20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -708,8 +740,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b16.setSelected(false);
                 b17.setSelected(false);
                 b18.setSelected(false);
+                b19.setSelected(false);
                 b1.setSelected(false);
-                b20.setSelected(false);
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
@@ -741,7 +773,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b16.setSelected(false);
                 b17.setSelected(false);
                 b18.setSelected(false);
-                b1.setSelected(false);
+                b19.setSelected(false);
                 b20.setSelected(false);
                 b1.setSelected(false);
                 b22.setSelected(false);
@@ -774,7 +806,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b16.setSelected(false);
                 b17.setSelected(false);
                 b18.setSelected(false);
-                b1.setSelected(false);
+                b19.setSelected(false);
                 b20.setSelected(false);
                 b21.setSelected(false);
                 b1.setSelected(false);
@@ -807,7 +839,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b16.setSelected(false);
                 b17.setSelected(false);
                 b18.setSelected(false);
-                b1.setSelected(false);
+                b19.setSelected(false);
                 b20.setSelected(false);
                 b21.setSelected(false);
                 b22.setSelected(false);
@@ -817,10 +849,8 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 //oUserDao.setInsertUser(user);
 
             }
+
         });
-
-
-
     }
 }
 
