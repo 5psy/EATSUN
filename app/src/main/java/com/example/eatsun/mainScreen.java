@@ -13,6 +13,12 @@ import androidx.viewpager.widget.ViewPager;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.example.eatsun.ReadingRoom;
+import com.example.eatsun.SeatCount;
 
 
 public class mainScreen extends AppCompatActivity {
@@ -20,6 +26,8 @@ public class mainScreen extends AppCompatActivity {
     ImageSlider imageSlider;
     ViewPager viewPager;
     private Button button;
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference();
 
     private long pressedTime = 0;
     @Override
@@ -66,6 +74,14 @@ public class mainScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+    public void seatCountDbSet() {
+        SeatCount seatCount = new SeatCount(Integer.toString(72));
+        Map<String, Object> postValues = seatCount.toMap();
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/seat_count/" + "nowSeatCount", postValues);
+        databaseReference.updateChildren(childUpdates);
     }
 }
 

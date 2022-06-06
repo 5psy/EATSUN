@@ -11,8 +11,8 @@ import java.util.Map;
 public class UserAccount {
     private String emailid;
     private String passwd;
-    private String idtoken; //고유토큰정보
-    //private int roomNum;
+    private String name;
+
     private int seatNum;
     private String reservationDate = "";
     private String remainTime = "";
@@ -21,9 +21,10 @@ public class UserAccount {
     public UserAccount(){
 
     }
-    public UserAccount(String emailid, String passwd) {
+    public UserAccount(String emailid, String passwd, String name) {
         this.emailid = emailid;
         this.passwd = passwd;
+        this.name = name;
     }
     public String getEmailid() {
         return emailid;
@@ -41,21 +42,6 @@ public class UserAccount {
         this.passwd = passwd;
     }
 
-    public String getIdtoken() {
-        return idtoken;
-    }
-
-    public void setIdtoken(String idtoken) {
-        this.idtoken = idtoken;
-    }
-
-    /*public int getRoomNum() {
-        return roomNum;
-    }
-
-    public void setRoomNum(int roomNum) {
-        this.roomNum = roomNum;
-    }*/
 
     public int getSeatNum() {
         return seatNum;
@@ -88,21 +74,26 @@ public class UserAccount {
     public void setReservationCheck(boolean reservationCheck) {
         this.reservationCheck = reservationCheck;
     }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Exclude
     public Map<String, Object> toMap() {
 
         HashMap<String, Object> result = new HashMap<>();
 
-        result.put("id", emailid);
-        result.put("pw", passwd);
-
-        //result.put("roomNum", roomNum);
+        result.put("emailid", emailid);
+        result.put("passwd", passwd);
+        result.put("name", name);
         result.put("seatNum", seatNum);
         result.put("reservationDate", reservationDate);
         result.put("remainTime", remainTime);
         result.put("reservationCheck", reservationCheck);
-
 
         return result;
     }

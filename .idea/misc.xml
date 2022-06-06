@@ -28,11 +28,13 @@
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_11_6.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_14_1.xml" value="0.25364583333333335" />
         <entry key="..\:/EATSUN/app/src/main/res/layout/sun_14_2.xml" value="0.25364583333333335" />
-        <entry key="..\:/EATSUN/app/src/main/res/layout/test_seat.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/drawable/color_change.xml" value="0.1" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/drawable/test1.xml" value="0.1" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/drawable/test2.xml" value="0.1" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/activity_main.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/payment.xml" value="0.17291666666666666" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_01.xml" value="0.21510416666666668" />
-        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_02.xml" value="0.1" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_02.xml" value="0.12553846522224033" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_03.xml" value="0.1" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_09_1.xml" value="0.17989666510098637" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_09_2.xml" value="0.20153985507246377" />
@@ -48,6 +50,11 @@
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_14_1.xml" value="0.115625" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/sun_14_2.xml" value="0.115625" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test_14_1_1.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test_myinfo.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test_recyclerview.xml" value="0.17291666666666666" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test_seat.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/layout/test_sun9.xml" value="0.21510416666666668" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.222" />
         <entry key="..\:/Users/dhy04/AndroidStudioProjects/EATSUN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.222" />
       </map>

@@ -1,19 +1,60 @@
 package com.example.eatsun;
 
+import static com.example.eatsun.login.loginId;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.List;
+
+import android.content.Context;
+import android.os.Handler;
+import android.util.Log;
+import android.view.Window;
+
+import androidx.annotation.NonNull;
+
+import com.example.eatsun.R;
+import com.example.eatsun.UserAccount;
+import com.example.eatsun.TimeConvert;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.example.eatsun.ReservationTimeAdd;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
 public class ReservationSeat extends AppCompatActivity {
 
     private Button button, button5;
+    private int scheck;
+    long now;
+    Date date;
+    UserAccount userDto = new UserAccount();
+    private String reservationTime() {
+        SimpleDateFormat format2 = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
+        now = System.currentTimeMillis();
+        date = new Date(now);
+        return format2.format(date);
+    }
 
     private long pressedTime = 0;
     @Override
@@ -28,6 +69,8 @@ public class ReservationSeat extends AppCompatActivity {
             System.exit(0);
         }
     }
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +93,7 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         Button b50 = (Button) this.findViewById(R.id. seat50);
         Button b51 = (Button) this.findViewById(R.id. seat51);
@@ -120,6 +164,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 50;
             }
         });
         ImageView btNext = (ImageView) findViewById(R.id.right1);
@@ -165,6 +210,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 51;
             }
         });
         b52.setOnClickListener(new View.OnClickListener() {
@@ -202,6 +248,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 52;
             }
         });
         b53.setOnClickListener(new View.OnClickListener() {
@@ -239,6 +286,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 53;
             }
         });
         b54.setOnClickListener(new View.OnClickListener() {
@@ -276,6 +324,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 54;
             }
         });
         b55.setOnClickListener(new View.OnClickListener() {
@@ -313,6 +362,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 55;
             }
         });
         b56.setOnClickListener(new View.OnClickListener() {
@@ -350,6 +400,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 56;
             }
         });
         b57.setOnClickListener(new View.OnClickListener() {
@@ -387,6 +438,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 57;
             }
         });
         b58.setOnClickListener(new View.OnClickListener() {
@@ -424,6 +476,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 58;
             }
         });
         b59.setOnClickListener(new View.OnClickListener() {
@@ -461,6 +514,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 59;
             }
         });
         b60.setOnClickListener(new View.OnClickListener() {
@@ -498,6 +552,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 60;
             }
         });
         b61.setOnClickListener(new View.OnClickListener() {
@@ -535,6 +590,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 61;
             }
         });
         b62.setOnClickListener(new View.OnClickListener() {
@@ -572,6 +628,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 62;
             }
         });
         b63.setOnClickListener(new View.OnClickListener() {
@@ -609,6 +666,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 63;
             }
         });
         b64.setOnClickListener(new View.OnClickListener() {
@@ -646,6 +704,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 64;
             }
         });
         b65.setOnClickListener(new View.OnClickListener() {
@@ -683,6 +742,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 65;
             }
         });
         b66.setOnClickListener(new View.OnClickListener() {
@@ -720,6 +780,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 66;
             }
         });
         b67.setOnClickListener(new View.OnClickListener() {
@@ -757,6 +818,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 67;
             }
         });
         b68.setOnClickListener(new View.OnClickListener() {
@@ -794,6 +856,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 68;
             }
         });
         b69.setOnClickListener(new View.OnClickListener() {
@@ -831,6 +894,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 69;
             }
         });
         b70.setOnClickListener(new View.OnClickListener() {
@@ -868,6 +932,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 70;
             }
         });
         b71.setOnClickListener(new View.OnClickListener() {
@@ -905,6 +970,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 71;
             }
         });
         b72.setOnClickListener(new View.OnClickListener() {
@@ -942,6 +1008,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 72;
             }
         });
         b73.setOnClickListener(new View.OnClickListener() {
@@ -979,6 +1046,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 73;
             }
         });
         b74.setOnClickListener(new View.OnClickListener() {
@@ -1016,6 +1084,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 74;
             }
         });
         b75.setOnClickListener(new View.OnClickListener() {
@@ -1053,6 +1122,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 75;
             }
         });
         b76.setOnClickListener(new View.OnClickListener() {
@@ -1090,6 +1160,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 76;
             }
         });
         b77.setOnClickListener(new View.OnClickListener() {
@@ -1127,6 +1198,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 77;
             }
         });
         b78.setOnClickListener(new View.OnClickListener() {
@@ -1164,6 +1236,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 78;
             }
         });
         b79.setOnClickListener(new View.OnClickListener() {
@@ -1201,6 +1274,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b51.setSelected(false);
                 b80.setSelected(false);
                 b81.setSelected(false);
+                scheck = 79;
             }
         });
         b80.setOnClickListener(new View.OnClickListener() {
@@ -1238,6 +1312,7 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b51.setSelected(false);
                 b81.setSelected(false);
+                scheck = 80;
             }
         });
         b81.setOnClickListener(new View.OnClickListener() {
@@ -1275,15 +1350,66 @@ public class ReservationSeat extends AppCompatActivity {
                 b79.setSelected(false);
                 b80.setSelected(false);
                 b51.setSelected(false);
+                scheck = 81;
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
+
+                for (int i = 50; i <= 81; i++){
+                    if(scheck == i){
+                        updateSeat(i, reservationTime());
+                        //updateUser(i, userDto,true, "현재 시간", "남은시간");
+                    }
+                    else{
+                        //updateUser(userDto);
+                    }
+                }
+
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });
+
+    }
+    public void updateSeat(int position, String reservationTime) {
+        String key = databaseReference.child("EatSun").push().getKey();
+        SeatDto seatDb = new SeatDto(position+1, loginId, true, reservationTime);
+        Map<String, Object> postValues = seatDb.toMap();
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put((position + 1) + "seat", postValues);
+        databaseReference.updateChildren(childUpdates);
+    }
+    public void updateUser(int position, UserAccount userDto, boolean reservationCheck, String reservationTime, String remainTime) {
+        userDto.setSeatNum(position + 1);
+        userDto.setReservationCheck(reservationCheck);
+        userDto.setReservationDate(reservationTime);
+        userDto.setRemainTime(remainTime);
+        Map<String, Object> postValues = userDto.toMap();
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/User/" + loginId, postValues);
+        databaseReference.updateChildren(childUpdates);
+    }
+
+    public void updateUser(UserAccount userDto) {
+        userDto.setReservationCheck(false);
+        userDto.setReservationDate("");
+        userDto.setRemainTime("");
+        userDto.setSeatNum(0);
+        Map<String, Object> postValues = userDto.toMap();
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/User/" + loginId, postValues);
+        databaseReference.updateChildren(childUpdates);
+    }
+
+    public void updateUser(UserAccount userDto, String renewTime) {
+        userDto.setRemainTime(renewTime);
+        Map<String, Object> postValues = userDto.toMap();
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/User/" + loginId, postValues);
+        databaseReference.updateChildren(childUpdates);
 
     }
 }

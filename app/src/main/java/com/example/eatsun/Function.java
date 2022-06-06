@@ -19,7 +19,7 @@ public class Function { // 사용자의 예약, 반납, 연장 기능을 담당�
         // 좌석 정보 업데이트
         dao.updateSeat(position, reservationTimeAdd.add(reservationTime));
         // 유저 정보 업데이트
-        dao.updateUser(position, userDto, true, reservationTime, reservationTimeAdd.add(reservationTime));
+        dao.updateUser(position,userDto,true, reservationTime, reservationTimeAdd.add(reservationTime));
         // 예약 좌석의 색상을 붉은색으로 변경
         seatDto.get(position).setSeatCheck(true);
     }
