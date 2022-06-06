@@ -56,21 +56,21 @@ public class CategoryActivity extends AppCompatActivity{
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_11_3.class);
+                Intent intent = new Intent(getApplicationContext(), sun_11_2.class);
                 startActivity(intent);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_11_5.class);
+                Intent intent = new Intent(getApplicationContext(), sun_11_3.class);
                 startActivity(intent);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sun_11_6.class);
+                Intent intent = new Intent(getApplicationContext(), sun_11_4.class);
                 startActivity(intent);
             }
         });

@@ -14,12 +14,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class payment extends AppCompatActivity {
 
-    TextView textView;
+    TextView price;
 
     @Override
     protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment);
+
+        Intent intent = getIntent();
+        String priceStr = intent.getExtras().getString("price");
+        price = (TextView)findViewById(R.id.price);
+        price.setText(priceStr);
 
         ImageView btn_dialog =  (ImageView) findViewById(R.id.cancel);
         btn_dialog.setOnClickListener(new View.OnClickListener() {

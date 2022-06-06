@@ -3,12 +3,14 @@ package com.example.eatsun;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
-
+import android.widget.ImageView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -41,6 +43,15 @@ public class register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_02);
+
+        ImageView actionModeCloseDrawable = findViewById(R.id.back1);
+        actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), login.class);
+                startActivity(intent);
+            }
+        });
 
         nFirebaseAuth = FirebaseAuth.getInstance();
         nDatabaseRef = FirebaseDatabase.getInstance().getReference( "EatSun");
@@ -75,6 +86,14 @@ public class register extends AppCompatActivity {
                         }
                     }
                 });
+            }
+        });
+        ImageView back1 = (ImageView) findViewById(R.id.back1);
+        back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), login.class);
+                startActivity(intent);
             }
         });
     }
