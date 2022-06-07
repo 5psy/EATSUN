@@ -25,7 +25,7 @@ public class Dao {
         userDto.setRemainTime(remainTime);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
+        childUpdates.put("/EatSun/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
     }
 
@@ -37,7 +37,7 @@ public class Dao {
         userDto.setSeatNum(0);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
+        childUpdates.put("/EatSun/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
     }
 
@@ -45,7 +45,7 @@ public class Dao {
         userDto.setRemainTime(renewTime);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
+        childUpdates.put("/EatSun/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
 
     }

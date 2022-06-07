@@ -82,7 +82,7 @@ public class login extends AppCompatActivity {
         });
     }
     public void loginCheck(final String emailid, final String passwd) {
-        final Query query = databaseReference.child("User");
+        final Query query = databaseReference.child("UserAccount");
         query.addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override

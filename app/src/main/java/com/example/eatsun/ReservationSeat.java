@@ -33,6 +33,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.example.eatsun.ReservationTimeAdd;
+import com.example.eatsun.Dao;
+import com.example.eatsun.Function;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -46,14 +48,29 @@ public class ReservationSeat extends AppCompatActivity {
 
     private Button button, button5;
     private int scheck;
+    private String dbseat;
     long now;
     Date date;
     UserAccount userDto = new UserAccount();
+    Function function = new Function();
+    List<SeatDto> seatDto;
+    static Context context;
+    List<SeatDto> count = new ArrayList<SeatDto>();
+    static boolean check = false;
+    static boolean flag = true;
+    SeatDto test;
+
     private String reservationTime() {
         SimpleDateFormat format2 = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
         now = System.currentTimeMillis();
         date = new Date(now);
         return format2.format(date);
+    }
+    private String displayTime() {
+        SimpleDateFormat format = new SimpleDateFormat("조회일자 : yyyy년 MM월 dd일 \n현재시간 : HH시 mm분 ss초");
+        now = System.currentTimeMillis();
+        date = new Date(now);
+        return format.format(date);
     }
 
     private long pressedTime = 0;
@@ -76,6 +93,9 @@ public class ReservationSeat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
+        context = this;
+        count = new ArrayList<>();
+        seatSet();
 
         ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back2);
         actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +113,14 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        ImageView btNext = (ImageView) findViewById(R.id.right1);
+        btNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReservationSeat.this, ReservationSeat_2.class);
+                startActivity(intent);
+            }
+        });
 
         Button b50 = (Button) this.findViewById(R.id. seat50);
         Button b51 = (Button) this.findViewById(R.id. seat51);
@@ -167,14 +194,7 @@ public class ReservationSeat extends AppCompatActivity {
                 scheck = 50;
             }
         });
-        ImageView btNext = (ImageView) findViewById(R.id.right1);
-        btNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReservationSeat.this, ReservationSeat_2.class);
-                startActivity(intent);
-            }
-        });
+
         b51.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -1357,24 +1377,26 @@ public class ReservationSeat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
-
                 for (int i = 50; i <= 81; i++){
                     if(scheck == i){
-                        updateSeat(i, reservationTime());
+                        //updateSeat(i, reservationTime());
+                        function.reservationSeat(i, userDto, seatDto, reservationTime());
                         //updateUser(i, userDto,true, "현재 시간", "남은시간");
+                        Toast.makeText(context, (i + 1) + "번 자리가 예약되었습니다.", Toast.LENGTH_SHORT).show();
+                        TimeConvert timeConvert = new TimeConvert(userDto.getRemainTime());
+                        Long timeValue = timeConvert.getDifferent();
                     }
                     else{
                         //updateUser(userDto);
                     }
                 }
-
                 Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
                 startActivity(intent);
             }
         });
 
     }
-    public void updateSeat(int position, String reservationTime) {
+    /*public void updateSeat(int position, String reservationTime) {
         String key = databaseReference.child("EatSun").push().getKey();
         SeatDto seatDb = new SeatDto(position+1, loginId, true, reservationTime);
         Map<String, Object> postValues = seatDb.toMap();
@@ -1411,5 +1433,47 @@ public class ReservationSeat extends AppCompatActivity {
         childUpdates.put("/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
 
+    }*/
+    // 현재 화면이 새로 호출될 때마다 좌석을 새로 그려주는 메소드
+    private void seatSet() {
+
+        for (int j = 50; j <= 81; j++) {
+            Query query = databaseReference.child("EatSun").child(Integer.toString(j) + "seat");
+            query.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    check = false;
+                    test = dataSnapshot.getValue(SeatDto.class);
+                    SeatDto seatDto = test;
+                    if (count.size() >= 72)
+                        count.set(test.getSeatNum() - 1, seatDto);
+                    else
+                        count.add(seatDto);
+                }
+
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Log.w("loadPost:onCancelled", databaseError.toException());
+                }
+
+            });
+
+        }
+
     }
+    // DB 좌석 생성기
+    private void dbCreate() {
+        String key = databaseReference.child("EatSun").push().getKey();
+
+        for (int i = 50; i <= 81; i++) {     // 좌석 수
+            SeatDto seatDto = new SeatDto(i);
+            Map<String, Object> postValues = seatDto.toMap();
+            Map<String, Object> seatUpdates = new HashMap<>();
+            seatUpdates.put("/EatSun/" + i + "seat", postValues);
+            databaseReference.updateChildren(seatUpdates);
+        }
+    }
+
 }

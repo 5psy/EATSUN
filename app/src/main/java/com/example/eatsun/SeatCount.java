@@ -9,10 +9,9 @@ import java.util.Map;
 @IgnoreExtraProperties
 public class SeatCount {
 
-    private String nowSeatCount = "4";
+    private String nowSeatCount = "72";
 
     public SeatCount(){
-
     }
 
     public SeatCount(String nowSeatCount){

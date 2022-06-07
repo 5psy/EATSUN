@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -47,7 +48,7 @@ public class ReadingRoom extends AppCompatActivity {
     static Context context;
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = firebaseDatabase.getReference();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +60,11 @@ public class ReadingRoom extends AppCompatActivity {
         setContentView(R.layout.test_seat);
 
         context = this;
+        //Button b50 = (Button) this.findViewById(R.id. seat50);
 
         recyclerview = (RecyclerView) findViewById(R.id.sp1);
 
-        layout = new GridLayoutManager(this, 2);
+        layout = new GridLayoutManager(this, 4);
 
         recyclerview.setHasFixedSize(true);
 
@@ -100,7 +102,7 @@ public class ReadingRoom extends AppCompatActivity {
 
 
     // 예약 다이얼로그 메소드
-    public void reservationDialog(final int position, final List<SeatDto> seatDto, final UserAccount userDto) {
+    public void reservationDialog(final int position, final List<SeatDto> seatDto, final int roomnum, final UserAccount userDto) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("예약(현재좌석 : " + (position + 1) + "번)");
         builder.setMessage(displayTime() + "\n\n예약하시겠습니까?").setCancelable(false).setPositiveButton("예", new DialogInterface.OnClickListener() {
@@ -111,20 +113,18 @@ public class ReadingRoom extends AppCompatActivity {
                 Long timeValue = timeConvert.getDifferent();
             }
         });
-
         builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(context, "취소", Toast.LENGTH_SHORT).show();
             }
         });
-
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
 
 
     // 이동 다이얼로그 메소드
-    public void moveDialog(final int position, final UserAccount userDto, final List<SeatDto> seatDto) {
+    public void moveDialog(final int position, final int roomnum, final UserAccount userDto, final List<SeatDto> seatDto) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("이동(변경좌석 : " + (position + 1) + "번)");
         builder.setMessage(displayTime() + "\n\n이동하시겠습니까?").setCancelable(false).setPositiveButton("예", new DialogInterface.OnClickListener() {
@@ -133,7 +133,6 @@ public class ReadingRoom extends AppCompatActivity {
                 Toast.makeText(context, "이동 완료", Toast.LENGTH_SHORT).show();
             }
         });
-
         builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(context, "이동 취소", Toast.LENGTH_SHORT).show();
@@ -146,7 +145,7 @@ public class ReadingRoom extends AppCompatActivity {
 
 
     // 반납 연장 다이얼로그 메소드
-    /*public void returnRenewDialog(final List<SeatDto> seatDto, final UserAccount userDto) {
+    public void returnRenewDialog(final List<SeatDto> seatDto, final UserAccount userDto) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("반납/연장");
         builder.setMessage(displayTime() + "\n\n반납/연장하시겠습니까?");
@@ -171,13 +170,13 @@ public class ReadingRoom extends AppCompatActivity {
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-    }*/
+    }
 
 
     // 현재 화면이 새로 호출될 때마다 좌석을 새로 그려주는 메소드
     private void seatSet() {
 
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 72; i++) {
             Query query = databaseReference.child("EatSun").child(Integer.toString(i) + "seat");
             query.addValueEventListener(new ValueEventListener() {
 
@@ -187,13 +186,13 @@ public class ReadingRoom extends AppCompatActivity {
                     test = dataSnapshot.getValue(SeatDto.class);
                     SeatDto seatDto = test;
 
-                    if (count.size() >= 4)
+                    if (count.size() >= 72)
                         count.set(test.getSeatNum() - 1, seatDto);
                     else
                         count.add(seatDto);
 
-                    Log.e("seatTest", Integer.toString(test.getSeatNum()));
-                    //recyclerview.setAdapter(new CountAdapter(getApplication(), count));
+                    //Log.e("seatTest", Integer.toString(test.getSeatNum()));
+                    recyclerview.setAdapter(new CountAdapter(getApplication(), count));
 
                 }
 
@@ -207,12 +206,11 @@ public class ReadingRoom extends AppCompatActivity {
         }
 
     }
-
     // DB 좌석 생성기
     private void dbCreate() {
         String key = databaseReference.child("EatSun").push().getKey();
 
-        for (int i = 1; i <= 4; i++) {     // 좌석 수
+        for (int i = 1; i <= 72; i++) {     // 좌석 수
             SeatDto seatDto = new SeatDto(i);
             Map<String, Object> postValues = seatDto.toMap();
             Map<String, Object> seatUpdates = new HashMap<>();

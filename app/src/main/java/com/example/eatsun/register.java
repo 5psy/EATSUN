@@ -87,11 +87,11 @@ public class register extends AppCompatActivity {
             }
         });
     } private void registerUp(String emailid, String passwd, String name) {
-        String key =  nDatabaseRef.child("User").push().getKey();
+        String key =  nDatabaseRef.child("UserAccount").push().getKey();
         UserAccount userDto = new UserAccount(emailid, passwd, name);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + emailid, postValues);
+        childUpdates.put("/UserAccount/" + emailid, postValues);
         nDatabaseRef.updateChildren(childUpdates);
     }
 }

@@ -64,6 +64,9 @@
         <activity
             android:name=".ReadingRoom"
             android:exported="true"/>
+        <activity
+            android:name=".ReadingRoomList"
+            android:exported="true"/>
 
 
     </application>
