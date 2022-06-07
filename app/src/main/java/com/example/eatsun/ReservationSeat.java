@@ -55,7 +55,7 @@ public class ReservationSeat extends AppCompatActivity {
     Function function = new Function();
     List<SeatDto> seatDto;
     static Context context;
-    List<SeatDto> count = new ArrayList<SeatDto>();
+    //List<SeatDto> count = new ArrayList<SeatDto>();
     static boolean check = false;
     static boolean flag = true;
     SeatDto test;
@@ -94,7 +94,7 @@ public class ReservationSeat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
         context = this;
-        count = new ArrayList<>();
+        //count = new ArrayList<>();
         seatSet();
 
         ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back2);
@@ -1377,6 +1377,8 @@ public class ReservationSeat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
+                startActivity(intent);
                 for (int i = 50; i <= 81; i++){
                     if(scheck == i){
                         //updateSeat(i, reservationTime());
@@ -1390,8 +1392,6 @@ public class ReservationSeat extends AppCompatActivity {
                         //updateUser(userDto);
                     }
                 }
-                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
-                startActivity(intent);
             }
         });
 
@@ -1446,10 +1446,10 @@ public class ReservationSeat extends AppCompatActivity {
                     check = false;
                     test = dataSnapshot.getValue(SeatDto.class);
                     SeatDto seatDto = test;
-                    if (count.size() >= 72)
+                    /*if (count.size() >= 72)
                         count.set(test.getSeatNum() - 1, seatDto);
                     else
-                        count.add(seatDto);
+                        count.add(seatDto);*/
                 }
 
 
