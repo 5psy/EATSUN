@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.eatsun.Dao;
+import com.example.eatsun.Function;
+import com.example.eatsun.UserAccount;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +23,11 @@ import java.util.concurrent.TimeUnit;
 public class sun_14_2 extends AppCompatActivity {
     Button button, buttonexit;
     TextView textView;
+    Function function = new Function();
+    UserAccount userDto = new UserAccount();
+
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
 
     private long pressedTime = 0;
     @Override
@@ -48,12 +58,14 @@ public class sun_14_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         buttonexit = findViewById(R.id.exit);
         buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast toast = Toast.makeText(getApplicationContext(), "입장 버튼 클릭 후 퇴장 가능합니다.",Toast.LENGTH_SHORT);
                 toast.show();
+                function.returnSeat(userDto);
             }
         });
         ImageView back11 = (ImageView) findViewById(R.id.back11);
