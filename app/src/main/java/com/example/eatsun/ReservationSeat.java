@@ -3,10 +3,6 @@ package com.example.eatsun;
 import static com.example.eatsun.login.loginId;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +31,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.example.eatsun.ReservationTimeAdd;
 import com.example.eatsun.Dao;
 import com.example.eatsun.Function;
+import com.example.eatsun.seatSet;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -56,6 +53,8 @@ public class ReservationSeat extends AppCompatActivity {
     Function function = new Function();
     List<SeatDto> seatDto;
     static Context context;
+    seatSet seatset = new seatSet();
+    //seatset.seatshow1();
 
    //예약한 시간
     private String reservationTime() {

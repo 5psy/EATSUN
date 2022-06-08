@@ -2,10 +2,6 @@ package com.example.eatsun;
 
 import androidx.appcompat.app.AppCompatActivity;
 import static com.example.eatsun.login.loginId;
-import androidx.room.Room;
-
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
