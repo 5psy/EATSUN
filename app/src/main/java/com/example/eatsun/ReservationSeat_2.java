@@ -1,6 +1,5 @@
 package com.example.eatsun;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import static com.example.eatsun.login.loginId;
 import androidx.room.Room;
@@ -146,12 +145,6 @@ public class ReservationSeat_2 extends AppCompatActivity {
         Button b48 = (Button) this.findViewById(R.id.seat48);
         Button b49 = (Button) this.findViewById(R.id.seat49);
 
-        /*UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "EatSun")
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
-        //nUserDao = database.userDao();  //인터페이스 객체 할당
-        Userroom user = new Userroom();*/
 
         b24.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1031,5 +1024,27 @@ public class ReservationSeat_2 extends AppCompatActivity {
             }
 
         });
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
+                startActivity(intent);
+                for (int i = 24; i <= 49; i++){
+                    if(scheck == i){
+                        //updateSeat(i, reservationTime());
+                        function.reservationSeat(i, userDto, seatDto, reservationTime());
+                        //updateUser(i, userDto,true, "현재 시간", "남은시간");
+                        Toast.makeText(context, (i) + "번 자리가 예약되었습니다.", Toast.LENGTH_SHORT).show();
+                        TimeConvert timeConvert = new TimeConvert(userDto.getRemainTime());
+                        Long timeValue = timeConvert.getDifferent();
+                    }
+                    else{
+                        //updateUser(userDto);
+                    }
+                }
+            }
+        });
+
     }
 }
