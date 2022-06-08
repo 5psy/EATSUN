@@ -13,12 +13,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import java.text.DateFormat;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.example.eatsun.ReadingRoom;
-import com.example.eatsun.SeatCount;
 
 
 public class mainScreen extends AppCompatActivity {
@@ -48,14 +45,18 @@ public class mainScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_03);
 
+        //왼쪽 상단 오늘 날짜 구현
         Calendar calendar = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance().format(calendar.getTime());
         TextView textview = findViewById(R.id.text_view_date);
         textview.setText(currentDate);
+
+        //mainscreen 스크롤 구현
         viewPager = (ViewPager) findViewById(R.id.view);
         imageSlider = new ImageSlider(this);
         viewPager.setAdapter(imageSlider);
 
+        //'예약하기'누른 경우 reservationseat으로 이동
         button = findViewById(R.id.resbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +66,7 @@ public class mainScreen extends AppCompatActivity {
 
             }
         });
-        //ImageView mypage;
+        //오른쪽 상단 두줄 버튼 누르면 마이페이지로 이동
         ImageView mypage = (ImageView) findViewById(R.id.mypage);
         mypage.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -75,13 +76,6 @@ public class mainScreen extends AppCompatActivity {
             }
         });
 
-    }
-    public void seatCountDbSet() {
-        SeatCount seatCount = new SeatCount(Integer.toString(72));
-        Map<String, Object> postValues = seatCount.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/seat_count/" + "nowSeatCount", postValues);
-        databaseReference.updateChildren(childUpdates);
     }
 }
 

@@ -23,9 +23,6 @@
         <activity
             android:name=".mainScreen"/>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
-        <activity
             android:name=".ReservationSeat"
             android:exported="true"/>
         <activity
@@ -60,12 +57,6 @@
             android:exported="true"/>
         <activity
             android:name=".payment"
-            android:exported="true"/>
-        <activity
-            android:name=".ReadingRoom"
-            android:exported="true"/>
-        <activity
-            android:name=".ReadingRoomList"
             android:exported="true"/>
 
 
