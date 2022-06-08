@@ -110,7 +110,7 @@ public class seatSet extends AppCompatActivity{
     Button b80 = (Button) this.findViewById(R.id. seat80);
     Button b81 = (Button) this.findViewById(R.id. seat81);
 
-    //test용으로 -파이어베이스에서 reservationseat에 해당되는 데이터 가져오기 ->실패
+    //test용으로 -파이어베이스에서 reservationseat에 해당되는 데이터 가져오기 ->fail
     public void seatshow1(){
         for (int j = 50; j <= 81; j++) {
             Query query = databaseReference.child("EatSun").child("b"+Integer.toString(j));

@@ -53,7 +53,7 @@ public class ReservationSeat extends AppCompatActivity {
     Function function = new Function();
     List<SeatDto> seatDto;
     static Context context;
-    seatSet seatset = new seatSet();
+    //seatSet seatset = new seatSet();
     //seatset.seatshow1();
 
    //예약한 시간
@@ -1350,52 +1350,7 @@ public class ReservationSeat extends AppCompatActivity {
         });
 
     }
-    // 현재 화면이 새로 호출될 때마다 좌석을 새로 그려주는 메소드
-    /*private void seatSet() {
-
-        for (int j = 50; j <= 81; j++) {
-            Query query = databaseReference.child("EatSun").child("b"+Integer.toString(j));
-            query.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot datasnapshot) {
-                    if (datasnapshot.hasChild("reservationCheck"))
-                        if (datasnapshot.child("reservationCheck").getValue().equals("true")) {
-                            dbseat = datasnapshot.child("seatNum").getValue().toString();
-                            for (int k = 50; k <= 81; k++){
-                                if(dbseat.equals(k)){"b"+Integer.toString(k).setSelected(true)}
-                            }
-                            if(dbseat == "50"){b50.setSelected(true);}if(dbseat == "51"){b51.setSelected(true);}
-                            if(dbseat == "52"){b52.setSelected(true);}if(dbseat == "53"){b53.setSelected(true);}
-                            if(dbseat == "54"){b54.setSelected(true);}if(dbseat == "55"){b55.setSelected(true);}
-                            if(dbseat == "56"){b56.setSelected(true);}if(dbseat == "57"){b57.setSelected(true);}
-                            if(dbseat == "58"){b58.setSelected(true);}if(dbseat == "59"){b59.setSelected(true);}
-                            if(dbseat == "60"){b60.setSelected(true);}if(dbseat == "61"){b61.setSelected(true);}
-                            if(dbseat == "62"){b62.setSelected(true);}if(dbseat == "63"){b63.setSelected(true);}
-                            if(dbseat == "64"){b64.setSelected(true);}if(dbseat == "65"){b65.setSelected(true);}
-                            if(dbseat == "66"){b66.setSelected(true);}if(dbseat == "67"){b67.setSelected(true);}
-                            if(dbseat == "68"){b68.setSelected(true);}if(dbseat == "69"){b69.setSelected(true);}
-                            if(dbseat == "70"){b70.setSelected(true);}if(dbseat == "71"){b71.setSelected(true);}
-                            if(dbseat == "72"){b72.setSelected(true);}if(dbseat == "73"){b73.setSelected(true);}
-                            if(dbseat == "74"){b74.setSelected(true);}if(dbseat == "75"){b75.setSelected(true);}
-                            if(dbseat == "76"){b76.setSelected(true);}if(dbseat == "77"){b77.setSelected(true);}
-                            if(dbseat == "78"){b78.setSelected(true);}if(dbseat == "79"){b79.setSelected(true);}
-                            if(dbseat == "80"){b80.setSelected(true);}if(dbseat == "81"){b81.setSelected(true);}
-
-                        } else
-                            Log.e("seatCheck : ", "업데이트 실패.");
-                    else
-                        Log.e("seatCheck : ", "업데이트 실패");
-                }
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Log.w("loadPost:onCancelled", databaseError.toException());
-                }
-
-            });
-
-        }
-
-    }*/
+    /*
     // DB 좌석 생성기
     private void dbCreate() {
         String key = databaseReference.child("EatSun").push().getKey();
@@ -1406,5 +1361,5 @@ public class ReservationSeat extends AppCompatActivity {
             seatUpdates.put("/EatSun/" + i + "seat", postValues);
             databaseReference.updateChildren(seatUpdates);
         }
-    }
+    }*/
 }

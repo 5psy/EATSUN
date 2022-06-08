@@ -20,7 +20,7 @@ public class Dao {
     public void updateUser(int position, UserAccount userDto, boolean reservationCheck, String reservationTime, String remainTime) {
         userDto.setSeatNum(position);
         userDto.setReservationCheck(reservationCheck);
-        userDto.setReservationDate(reservationTime);
+        //userDto.setReservationDate(reservationTime);
         userDto.setRemainTime(remainTime);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
@@ -31,7 +31,7 @@ public class Dao {
     //해당 자리 퇴장 경우 사용자 데이터 업데이트
     public void updateUser(UserAccount userDto) {
         userDto.setReservationCheck(false);
-        userDto.setReservationDate("");
+        //userDto.setReservationDate("");
         userDto.setRemainTime("");
         userDto.setSeatNum(0);
         Map<String, Object> postValues = userDto.toMap();

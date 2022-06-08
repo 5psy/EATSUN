@@ -35,6 +35,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//Reservationseat.java와 작동 동일
 public class ReservationSeat_3 extends AppCompatActivity {
 
     private Button button7;
