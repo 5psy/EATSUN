@@ -18,14 +18,11 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class countdown extends AppCompatActivity {
-//  private static final long START_TIME_IN_MILLIS = 2400000;
-//  private long mTimeLeftMillis = START_TIME_IN_MILLIS;
     TextView countdown_tv;
     Button buttonenter, buttonexit, button;
- //  CountDownTimer CountDownTimer;
- //  boolean TimerRunning;
     TextView textView;
 
+    //뒤로가기 버튼 두 번 클릭 시 앱 종료
     private long pressedTime = 0;
     @Override
     public void onBackPressed(){
@@ -73,22 +70,17 @@ public class countdown extends AppCompatActivity {
 
         buttonenter = findViewById(R.id.enter);
         buttonexit = findViewById(R.id.exit);
-        countdown_tv = findViewById(R.id.countdown_tv);
-/*        buttonenter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startTimer();
-            }
-        });*/
+        //countdown_tv = findViewById(R.id.countdown_tv);
+
+        //40분 사용시간 시작
         textView = findViewById(R.id.countdown_tv);
         long duration = TimeUnit.MINUTES.toMillis(40);
         new CountDownTimer(duration, 1000) {
             @Override
             public void onTick(long l) {
-
                 String sDuration = String.format(Locale.ENGLISH,"%02d:%02d"
                         , TimeUnit.MILLISECONDS.toMinutes(l)
-                        , TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));   //40분 사용시간 시작
+                        , TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
 
                 textView.setText(sDuration);
             }
@@ -104,6 +96,7 @@ public class countdown extends AppCompatActivity {
                 }, 1000);
             }
         }.start();
+        //뒤로가기 버튼
         ImageView back11 = (ImageView) findViewById(R.id.back11);
         back11.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,6 +105,7 @@ public class countdown extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //로그아웃 버튼
         button = findViewById(R.id.logout);
         button.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -123,6 +117,7 @@ public class countdown extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        //퇴장 버튼
         buttonexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,37 +129,6 @@ public class countdown extends AppCompatActivity {
             }
         });
     }
-/*    private void startTimer(){
-    CountDownTimer = new CountDownTimer(mTimeLeftMillis, 1000) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-            mTimeLeftMillis = millisUntilFinished;
-            updateCountDownText();
-        }
-        @Override
-        public void onFinish() {
-            countdown_tv.setText("00:00");
-            textView.setVisibility(View.GONE);
-
-            Toast.makeText(getApplicationContext()
-                    ,"Countdown timer has ended", Toast.LENGTH_SHORT).show();
-        }
-    }.start();
-
-    TimerRunning = false;
-}*/
-    /*    private void resetTimer(){
-            CountDownTimer.cancel();
-            TimerRunning = true;
-            mTimeLeftMillis = START_TIME_IN_MILLIS;
-            updateCountDownText();
-        }*/
-    /*private void updateCountDownText(){
-        int min = (int) (mTimeLeftMillis/1000)/60;
-        int sec = (int) (mTimeLeftMillis/1000)%60;
-        String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
-        countdown_tv.setText(timeLeftFormatted);
-    }*/
 }
 
 

@@ -27,6 +27,7 @@ public class mainScreen extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
 
+    //뒤로가기 두 번 클릭 시 앱 종료
     private long pressedTime = 0;
     @Override
     public void onBackPressed(){

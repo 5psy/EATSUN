@@ -28,6 +28,7 @@ public class register extends AppCompatActivity {
     private EditText nEtid, nEtpwd, nEtname;
     private Button nBtnregister;
 
+    //뒤로가기 버튼 두 번 클릭 시 앱 종료
     private long pressedTime = 0;
     @Override
     public void onBackPressed(){
