@@ -31,7 +31,7 @@ public class payment extends AppCompatActivity {
         card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),randomnumber.class);
+                Intent intent = new Intent(getApplicationContext(),sun_14_2.class);
                 startActivity(intent);
             }
         });

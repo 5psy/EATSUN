@@ -18,6 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class sun_14_2 extends AppCompatActivity {
@@ -43,10 +44,39 @@ public class sun_14_2 extends AppCompatActivity {
         }
     }
 
+    TextView textView1[] = new TextView[1];
+    int arr_textview_id[] = {R.id.random_text1};
+
+    Button mbtn_random;
+
+    Integer arr_random_num[] = new Integer[1];
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
+
+        for (int i = 0; i < arr_textview_id.length; i++) {
+            final int index;
+            index = i;
+            textView1[index] = findViewById(arr_textview_id[index]);
+        }
+
+        mbtn_random = findViewById(R.id.random_btn);
+
+        mbtn_random.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
+                for (int i = 0; i < arr_random_num.length; i++) {
+                    int arr_random_num = random.nextInt(100) + 1;
+
+
+                    textView1[i].setText(Integer.toString(arr_random_num));
+                }
+            }
+        });
 
         button = findViewById(R.id.enter);
         button.setOnClickListener(new View.OnClickListener() {
