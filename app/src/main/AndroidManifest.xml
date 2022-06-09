@@ -58,9 +58,6 @@
         <activity
             android:name=".payment"
             android:exported="true"/>
-        <activity
-            android:name=".randomnumber"
-            android:exported="true"/>
 
     </application>
 
