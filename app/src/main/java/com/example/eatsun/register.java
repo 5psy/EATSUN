@@ -78,7 +78,7 @@ public class register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    //회원가입 데이터 hashmap사용해 파이어베이스에 저장
+    //회원가입 데이터 hashmap이용해 파이어베이스에 저장
     } private void registerUp(String emailid, String passwd, String name) {
         String key =  nDatabaseRef.child("UserAccount").push().getKey();
         UserAccount userDto = new UserAccount(emailid, passwd, name);
