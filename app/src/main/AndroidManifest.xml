@@ -62,10 +62,7 @@
             android:name=".payment"
             android:exported="true"/>
         <activity
-            android:name=".ReadingRoom"
-            android:exported="true"/>
-        <activity
-            android:name=".ReadingRoomList"
+            android:name=".randomnumber"
             android:exported="true"/>
 
 

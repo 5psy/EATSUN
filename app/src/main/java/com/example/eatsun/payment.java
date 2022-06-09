@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.TextView;
+import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,15 @@ public class payment extends AppCompatActivity {
         price = (TextView)findViewById(R.id.price);
         price.setText(priceStr);
 
+        ImageView card = (ImageView) findViewById(R.id.card);
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),randomnumber.class);
+                startActivity(intent);
+            }
+        });
+
         ImageView btn_dialog =  (ImageView) findViewById(R.id.cancel);
         btn_dialog.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,14 +47,14 @@ public class payment extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(),"결제가 취소되었습니다.",Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), ReservationSeat.class);
+                        Intent intent = new Intent(getApplicationContext(), ReservationSeat.class); //결제가 취소되었습니다. 라는 문구가 뜨며 좌석선택 첫번째 페이지로 이동
                         startActivity(intent);
                     }
                 });
                 dlg.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getApplicationContext(),"결제를 진행하겠습니다.",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"결제를 진행하겠습니다.",Toast.LENGTH_SHORT).show(); //아니오 누를 시 결제를 진행하겠습니다라는 문구가뜸
                     }
                 });
                 dlg.show();
@@ -52,13 +62,5 @@ public class payment extends AppCompatActivity {
             }
         });
 
-        ImageView card = (ImageView) findViewById(R.id.card);
-        card.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), sun_14_2.class);
-                startActivity(intent);
-            }
-        });
     }
 }
