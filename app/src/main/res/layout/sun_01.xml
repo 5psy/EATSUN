@@ -58,7 +58,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:fontFamily="@font/malgunbd"
-            android:hint="E-MAIL"
+            android:hint="ID"
             android:inputType="textEmailAddress"
             android:padding="20dp"
             android:textSize="24sp"

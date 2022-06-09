@@ -4,7 +4,6 @@ import com.example.eatsun.SeatDto;
 import com.example.eatsun.UserAccount;
 import com.example.eatsun.ReservationTimeAdd;
 import com.example.eatsun.TimeConvert;
-import static com.example.eatsun.ReadingRoom.totalSeat;
 import static com.example.eatsun.login.loginId;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -17,11 +16,11 @@ public class Dao {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-
+    //자리 선택 완료 경우 사용자 데이터 업데이트
     public void updateUser(int position, UserAccount userDto, boolean reservationCheck, String reservationTime, String remainTime) {
-        userDto.setSeatNum(position + 1);
+        userDto.setSeatNum(position);
         userDto.setReservationCheck(reservationCheck);
-        userDto.setReservationDate(reservationTime);
+        //userDto.setReservationDate(reservationTime);
         userDto.setRemainTime(remainTime);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
@@ -29,10 +28,10 @@ public class Dao {
         databaseReference.updateChildren(childUpdates);
     }
 
-
+    //해당 자리 퇴장 경우 사용자 데이터 업데이트
     public void updateUser(UserAccount userDto) {
         userDto.setReservationCheck(false);
-        userDto.setReservationDate("");
+        //userDto.setReservationDate("");
         userDto.setRemainTime("");
         userDto.setSeatNum(0);
         Map<String, Object> postValues = userDto.toMap();
@@ -47,18 +46,17 @@ public class Dao {
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/EatSun/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
-
     }
-
+    //선택된 자리 데이터 업데이트
     public void updateSeat(int position, String reservationTime) {
         String key = databaseReference.child("EatSun").push().getKey();
-        SeatDto seatDb = new SeatDto(position + 1, loginId, true, reservationTime);
+        SeatDto seatDb = new SeatDto(position, loginId, true, reservationTime);
         Map<String, Object> postValues = seatDb.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/EatSun/" + (position + 1) + "seat", postValues);
+        childUpdates.put("/EatSun/" +"b"+ position , postValues);
         databaseReference.updateChildren(childUpdates);
     }
-
+    //이용하던 자리 데이터 제거
     public void emptySeat(int usedSeat) {
         String key = databaseReference.child("EatSun").push().getKey();
         SeatDto seatDb = new SeatDto(usedSeat, "", false, "");
@@ -68,18 +66,4 @@ public class Dao {
         databaseReference.updateChildren(childUpdates);
     }
 
-    public void upCount() {
-        SeatCount seatCount = new SeatCount(Integer.toString(totalSeat + 1));
-        Map<String, Object> postValues = seatCount.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/seat_count/" + "nowSeatCount", postValues);
-        databaseReference.updateChildren(childUpdates);
-    }
-    public void downCount() {
-        SeatCount seatCount = new SeatCount(Integer.toString(totalSeat - 1));
-        Map<String, Object> postValues = seatCount.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/seat_count/" + "nowSeatCount", postValues);
-        databaseReference.updateChildren(childUpdates);
-    }
 }

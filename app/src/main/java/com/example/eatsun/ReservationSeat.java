@@ -3,10 +3,6 @@ package com.example.eatsun;
 import static com.example.eatsun.login.loginId;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +31,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.example.eatsun.ReservationTimeAdd;
 import com.example.eatsun.Dao;
 import com.example.eatsun.Function;
+import com.example.eatsun.seatSet;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -48,6 +45,7 @@ public class ReservationSeat extends AppCompatActivity {
 
     private Button button, button5;
     private int scheck;
+    private int k;
     private String dbseat;
     long now;
     Date date;
@@ -55,11 +53,10 @@ public class ReservationSeat extends AppCompatActivity {
     Function function = new Function();
     List<SeatDto> seatDto;
     static Context context;
-    //List<SeatDto> count = new ArrayList<SeatDto>();
-    static boolean check = false;
-    static boolean flag = true;
-    SeatDto test;
+    //seatSet seatset = new seatSet();
+    //seatset.seatshow1();
 
+   //예약한 시간
     private String reservationTime() {
         SimpleDateFormat format2 = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
         now = System.currentTimeMillis();
@@ -72,7 +69,6 @@ public class ReservationSeat extends AppCompatActivity {
         date = new Date(now);
         return format.format(date);
     }
-
     private long pressedTime = 0;
     @Override
     public void onBackPressed(){
@@ -86,6 +82,7 @@ public class ReservationSeat extends AppCompatActivity {
             System.exit(0);
         }
     }
+
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
 
@@ -94,9 +91,9 @@ public class ReservationSeat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.eatsun.R.layout.sun_09_1);
         context = this;
-        //count = new ArrayList<>();
-        seatSet();
+        //seatSet();
 
+        //뒤로가기 화살표를 눌러 메인화면으로 이동
         ImageView actionModeCloseDrawable = (ImageView) findViewById(R.id.back2);
         actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +102,7 @@ public class ReservationSeat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //다른 자리 선택창으로 이동
         ImageView ic_media_ff = (ImageView) findViewById(R.id.right1);
         ic_media_ff.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -156,41 +154,20 @@ public class ReservationSeat extends AppCompatActivity {
         Button b81 = (Button) this.findViewById(R.id. seat81);
         button5 = findViewById(R.id.complete);
 
+        //50번 자리를 선택한 경우 이용중으로 색 변경
         b50.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 b50.setSelected(true);
-                b51.setSelected(false);
-                b52.setSelected(false);
-                b53.setSelected(false);
-                b54.setSelected(false);
-                b55.setSelected(false);
-                b56.setSelected(false);
-                b57.setSelected(false);
-                b58.setSelected(false);
-                b59.setSelected(false);
-                b60.setSelected(false);
-                b61.setSelected(false);
-                b62.setSelected(false);
-                b63.setSelected(false);
-                b64.setSelected(false);
-                b65.setSelected(false);
-                b66.setSelected(false);
-                b67.setSelected(false);
-                b68.setSelected(false);
-                b69.setSelected(false);
-                b70.setSelected(false);
-                b71.setSelected(false);
-                b72.setSelected(false);
-                b73.setSelected(false);
-                b74.setSelected(false);
-                b75.setSelected(false);
-                b76.setSelected(false);
-                b77.setSelected(false);
-                b78.setSelected(false);
-                b79.setSelected(false);
-                b80.setSelected(false);
-                b81.setSelected(false);
+                b51.setSelected(false); //나머지를 false로해 이용중 자리 중복 허용하지 않음
+                b52.setSelected(false);b53.setSelected(false);b54.setSelected(false);b55.setSelected(false);
+                b56.setSelected(false);b57.setSelected(false);b58.setSelected(false);b59.setSelected(false);
+                b60.setSelected(false);b61.setSelected(false);
+                b62.setSelected(false);b63.setSelected(false);b64.setSelected(false);b65.setSelected(false);
+                b66.setSelected(false);b67.setSelected(false);b68.setSelected(false);b69.setSelected(false);
+                b70.setSelected(false);b71.setSelected(false);b72.setSelected(false);b73.setSelected(false);
+                b74.setSelected(false);b75.setSelected(false);b76.setSelected(false);b77.setSelected(false);
+                b78.setSelected(false);b79.setSelected(false);b80.setSelected(false);b81.setSelected(false);
                 scheck = 50;
             }
         });
@@ -199,37 +176,14 @@ public class ReservationSeat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 b51.setSelected(true);
-                b50.setSelected(false);
-                b52.setSelected(false);
-                b53.setSelected(false);
-                b54.setSelected(false);
-                b55.setSelected(false);
-                b56.setSelected(false);
-                b57.setSelected(false);
-                b58.setSelected(false);
-                b59.setSelected(false);
-                b60.setSelected(false);
-                b61.setSelected(false);
-                b62.setSelected(false);
-                b63.setSelected(false);
-                b64.setSelected(false);
-                b65.setSelected(false);
-                b66.setSelected(false);
-                b67.setSelected(false);
-                b68.setSelected(false);
-                b69.setSelected(false);
-                b70.setSelected(false);
-                b71.setSelected(false);
-                b72.setSelected(false);
-                b73.setSelected(false);
-                b74.setSelected(false);
-                b75.setSelected(false);
-                b76.setSelected(false);
-                b77.setSelected(false);
-                b78.setSelected(false);
-                b79.setSelected(false);
-                b80.setSelected(false);
-                b81.setSelected(false);
+                b50.setSelected(false);b52.setSelected(false);b53.setSelected(false);b54.setSelected(false);
+                b55.setSelected(false);b56.setSelected(false);b57.setSelected(false);b58.setSelected(false);
+                b59.setSelected(false);b60.setSelected(false);b61.setSelected(false);b62.setSelected(false);
+                b63.setSelected(false);b64.setSelected(false);b65.setSelected(false);b66.setSelected(false);
+                b67.setSelected(false);b68.setSelected(false);b69.setSelected(false);b70.setSelected(false);
+                b71.setSelected(false);b72.setSelected(false);b73.setSelected(false);b74.setSelected(false);
+                b75.setSelected(false);b76.setSelected(false);b77.setSelected(false);b78.setSelected(false);
+                b79.setSelected(false);b80.setSelected(false);b81.setSelected(false);
                 scheck = 51;
             }
         });
@@ -1384,7 +1338,7 @@ public class ReservationSeat extends AppCompatActivity {
                         //updateSeat(i, reservationTime());
                         function.reservationSeat(i, userDto, seatDto, reservationTime());
                         //updateUser(i, userDto,true, "현재 시간", "남은시간");
-                        Toast.makeText(context, (i + 1) + "번 자리가 예약되었습니다.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, (i) + "번 자리가 예약되었습니다.", Toast.LENGTH_SHORT).show();
                         TimeConvert timeConvert = new TimeConvert(userDto.getRemainTime());
                         Long timeValue = timeConvert.getDifferent();
                     }
@@ -1396,77 +1350,10 @@ public class ReservationSeat extends AppCompatActivity {
         });
 
     }
-    /*public void updateSeat(int position, String reservationTime) {
-        String key = databaseReference.child("EatSun").push().getKey();
-        SeatDto seatDb = new SeatDto(position+1, loginId, true, reservationTime);
-        Map<String, Object> postValues = seatDb.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put((position + 1) + "seat", postValues);
-        databaseReference.updateChildren(childUpdates);
-    }
-    public void updateUser(int position, UserAccount userDto, boolean reservationCheck, String reservationTime, String remainTime) {
-        userDto.setSeatNum(position + 1);
-        userDto.setReservationCheck(reservationCheck);
-        userDto.setReservationDate(reservationTime);
-        userDto.setRemainTime(remainTime);
-        Map<String, Object> postValues = userDto.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
-        databaseReference.updateChildren(childUpdates);
-    }
-
-    public void updateUser(UserAccount userDto) {
-        userDto.setReservationCheck(false);
-        userDto.setReservationDate("");
-        userDto.setRemainTime("");
-        userDto.setSeatNum(0);
-        Map<String, Object> postValues = userDto.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
-        databaseReference.updateChildren(childUpdates);
-    }
-
-    public void updateUser(UserAccount userDto, String renewTime) {
-        userDto.setRemainTime(renewTime);
-        Map<String, Object> postValues = userDto.toMap();
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/User/" + loginId, postValues);
-        databaseReference.updateChildren(childUpdates);
-
-    }*/
-    // 현재 화면이 새로 호출될 때마다 좌석을 새로 그려주는 메소드
-    private void seatSet() {
-
-        for (int j = 50; j <= 81; j++) {
-            Query query = databaseReference.child("EatSun").child(Integer.toString(j) + "seat");
-            query.addValueEventListener(new ValueEventListener() {
-
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    check = false;
-                    test = dataSnapshot.getValue(SeatDto.class);
-                    SeatDto seatDto = test;
-                    /*if (count.size() >= 72)
-                        count.set(test.getSeatNum() - 1, seatDto);
-                    else
-                        count.add(seatDto);*/
-                }
-
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Log.w("loadPost:onCancelled", databaseError.toException());
-                }
-
-            });
-
-        }
-
-    }
+    /*
     // DB 좌석 생성기
     private void dbCreate() {
         String key = databaseReference.child("EatSun").push().getKey();
-
         for (int i = 50; i <= 81; i++) {     // 좌석 수
             SeatDto seatDto = new SeatDto(i);
             Map<String, Object> postValues = seatDto.toMap();
@@ -1474,6 +1361,5 @@ public class ReservationSeat extends AppCompatActivity {
             seatUpdates.put("/EatSun/" + i + "seat", postValues);
             databaseReference.updateChildren(seatUpdates);
         }
-    }
-
+    }*/
 }

@@ -1,6 +1,5 @@
 package com.example.eatsun;
 
-import com.example.eatsun.SeatCount;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 

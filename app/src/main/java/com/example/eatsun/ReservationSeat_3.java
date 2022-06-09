@@ -1,22 +1,65 @@
 package com.example.eatsun;
 
+import androidx.appcompat.app.AppCompatActivity;
+import static com.example.eatsun.login.loginId;
 import android.content.Intent;
-import android.view.View;
-import android.widget.ImageView;
-
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-import androidx.room.Room;
+import android.content.Context;
+import android.os.Handler;
+import android.util.Log;
+import android.view.Window;
 
+import androidx.annotation.NonNull;
+import com.example.eatsun.R;
+import com.example.eatsun.UserAccount;
+import com.example.eatsun.TimeConvert;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.example.eatsun.ReservationTimeAdd;
+import com.example.eatsun.Dao;
+import com.example.eatsun.Function;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//Reservationseat.java와 작동 동일
 public class ReservationSeat_3 extends AppCompatActivity {
 
     private Button button7;
-    //private UserDao oUserDao;
+    private int scheck;
+    long now;
+    Date date;
+    UserAccount userDto = new UserAccount();
+    Function function = new Function();
+    List<SeatDto> seatDto;
+    static Context context;
+
+    //예약한 시간
+    private String reservationTime() {
+        SimpleDateFormat format2 = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
+        now = System.currentTimeMillis();
+        date = new Date(now);
+        return format2.format(date);
+    }
+    private String displayTime() {
+        SimpleDateFormat format = new SimpleDateFormat("조회일자 : yyyy년 MM월 dd일 \n현재시간 : HH시 mm분 ss초");
+        now = System.currentTimeMillis();
+        date = new Date(now);
+        return format.format(date);
+    }
 
     private long pressedTime = 0;
     @Override
@@ -31,6 +74,10 @@ public class ReservationSeat_3 extends AppCompatActivity {
             System.exit(0);
         }
     }
+
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,12 +132,6 @@ public class ReservationSeat_3 extends AppCompatActivity {
         Button b22 = (Button) this.findViewById(R.id. seat22);
         Button b23 = (Button) this.findViewById(R.id. seat23);
 
-        /*UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "EatSun")
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
-        //oUserDao = database.userDao();  //인터페이스 객체 할당 //m,n,o 달라도 문제없지?
-        Userroom user = new Userroom();*/
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,9 +159,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("1");
-                //oUserDao.setInsertUser(user);
+                scheck = 1;
 
             }
         });
@@ -151,9 +190,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("2");
-                //oUserDao.setInsertUser(user);
+                scheck = 2;
 
             }
         });
@@ -184,9 +221,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("3");
-                //oUserDao.setInsertUser(user);
+                scheck = 3;
 
             }
         });
@@ -217,10 +252,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("4");
-                //oUserDao.setInsertUser(user);
-
+                scheck = 4;
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
@@ -250,9 +282,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("5");
-                //oUserDao.setInsertUser(user);
+                scheck = 5;
 
             }
         });
@@ -283,9 +313,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("6");
-                //oUserDao.setInsertUser(user);
+                scheck = 6;
 
             }
         });
@@ -316,9 +344,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("7");
-                //oUserDao.setInsertUser(user);
+                scheck = 7;
 
             }
         });
@@ -349,9 +375,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("8");
-                //oUserDao.setInsertUser(user);
+                scheck = 8;
 
             }
         });
@@ -382,9 +406,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("9");
-                //oUserDao.setInsertUser(user);
+                scheck = 9;
 
             }
         });
@@ -415,9 +437,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("10");
-                //oUserDao.setInsertUser(user);
+                scheck = 10;
 
             }
         });
@@ -448,10 +468,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("11");
-                //oUserDao.setInsertUser(user);
-
+                scheck = 11;
             }
         });
         b12.setOnClickListener(new View.OnClickListener() {
@@ -481,9 +498,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("12");
-                //oUserDao.setInsertUser(user);
+                scheck = 12;
 
             }
         });
@@ -514,10 +529,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("13");
-                //oUserDao.setInsertUser(user);
-
+                scheck = 13;
             }
         });
         b14.setOnClickListener(new View.OnClickListener() {
@@ -547,9 +559,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("14");
-                //oUserDao.setInsertUser(user);
+                scheck = 14;
 
             }
         });
@@ -580,9 +590,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("15");
-                //oUserDao.setInsertUser(user);
+                scheck = 15;
 
             }
         });
@@ -613,10 +621,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("16");
-                //oUserDao.setInsertUser(user);
-
+                scheck = 16;
             }
         });
         b17.setOnClickListener(new View.OnClickListener() {
@@ -646,9 +651,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("17");
-                //oUserDao.setInsertUser(user);
+                scheck = 17;
 
             }
         });
@@ -679,9 +682,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("18");
-                //oUserDao.setInsertUser(user);
+                scheck = 18;
 
             }
         });
@@ -712,9 +713,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("19");
-                //oUserDao.setInsertUser(user);
+                scheck = 19;
 
             }
         });
@@ -745,9 +744,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("20");
-                //oUserDao.setInsertUser(user);
+                scheck = 20;
 
             }
         });
@@ -778,9 +775,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b1.setSelected(false);
                 b22.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("21");
-                //oUserDao.setInsertUser(user);
+                scheck = 21;
 
             }
         });
@@ -811,10 +806,7 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b1.setSelected(false);
                 b23.setSelected(false);
-
-                //user.setSeatnumber("22");
-                //oUserDao.setInsertUser(user);
-
+                scheck = 22;
             }
         });
         b23.setOnClickListener(new View.OnClickListener() {
@@ -844,12 +836,31 @@ public class ReservationSeat_3 extends AppCompatActivity {
                 b21.setSelected(false);
                 b22.setSelected(false);
                 b1.setSelected(false);
-
-                //user.setSeatnumber("23");
-                //oUserDao.setInsertUser(user);
+                scheck = 23;
 
             }
 
+        });
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
+                Intent intent = new Intent(getApplicationContext(), CategoryActivity.class);
+                startActivity(intent);
+                for (int i = 50; i <= 81; i++){
+                    if(scheck == i){
+                        //updateSeat(i, reservationTime());
+                        function.reservationSeat(i, userDto, seatDto, reservationTime());
+                        //updateUser(i, userDto,true, "현재 시간", "남은시간");
+                        Toast.makeText(context, (i) + "번 자리가 예약되었습니다.", Toast.LENGTH_SHORT).show();
+                        TimeConvert timeConvert = new TimeConvert(userDto.getRemainTime());
+                        Long timeValue = timeConvert.getDifferent();
+                    }
+                    else{
+                        //updateUser(userDto);
+                    }
+                }
+            }
         });
     }
 }

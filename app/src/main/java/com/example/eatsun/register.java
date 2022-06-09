@@ -46,15 +46,6 @@ public class register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_02);
 
-        ImageView actionModeCloseDrawable = findViewById(R.id.back1);
-        actionModeCloseDrawable.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), login.class);
-                startActivity(intent);
-            }
-        });
-
         nFirebaseAuth = FirebaseAuth.getInstance();
         nDatabaseRef = FirebaseDatabase.getInstance().getReference( "EatSun");
 
@@ -64,6 +55,7 @@ public class register extends AppCompatActivity {
         nEtname = findViewById(R.id. passwordcheck );
         nBtnregister = findViewById(R.id.signupbutton);
 
+        //회원가입 데이터 저장
         nBtnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +69,7 @@ public class register extends AppCompatActivity {
 
             }
         });
-
+        //회원가입에서 '화살표back1'을 누르면 login창으로 이동
         ImageView back1 = (ImageView) findViewById(R.id.back1);
         back1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +78,7 @@ public class register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    //회원가입 데이터 hashmap사용해 파이어베이스에 저장
     } private void registerUp(String emailid, String passwd, String name) {
         String key =  nDatabaseRef.child("UserAccount").push().getKey();
         UserAccount userDto = new UserAccount(emailid, passwd, name);

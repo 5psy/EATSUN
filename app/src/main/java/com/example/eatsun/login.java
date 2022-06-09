@@ -53,10 +53,10 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_01);
 
-
         nEtid = findViewById(R.id.ID);
         nEtpwd = findViewById(R.id.PW);
 
+        //로그인 버튼
         Button button_lg = findViewById(R.id.LOGIN);
         button_lg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +71,7 @@ public class login extends AppCompatActivity {
             }
         });
 
+        //회원가입 창으로 이동
         Button button_rg = findViewById(R.id.button2);
         button_rg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +82,7 @@ public class login extends AppCompatActivity {
 
         });
     }
+    //파이어베이스에 있는 아이디와 비밀번호를 입력 데이터와 비교해 로그인
     public void loginCheck(final String emailid, final String passwd) {
         final Query query = databaseReference.child("UserAccount");
         query.addListenerForSingleValueEvent(new ValueEventListener() {

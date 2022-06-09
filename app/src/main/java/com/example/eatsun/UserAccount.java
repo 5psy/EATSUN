@@ -14,7 +14,7 @@ public class UserAccount {
     private String name;
 
     private int seatNum;
-    private String reservationDate = "";
+    //private String reservationDate = "";
     private String remainTime = "";
     private boolean reservationCheck = false;
 
@@ -51,13 +51,13 @@ public class UserAccount {
         this.seatNum = seatNum;
     }
 
-    public String getReservationDate() {
+    /*public String getReservationDate() {
         return reservationDate;
     }
 
     public void setReservationDate(String reservationDate) {
         this.reservationDate = reservationDate;
-    }
+    }*/
 
     public String getRemainTime() {
         return remainTime;
@@ -91,10 +91,9 @@ public class UserAccount {
         result.put("passwd", passwd);
         result.put("name", name);
         result.put("seatNum", seatNum);
-        result.put("reservationDate", reservationDate);
+        //result.put("reservationDate", reservationDate);
         result.put("remainTime", remainTime);
         result.put("reservationCheck", reservationCheck);
-
         return result;
     }
 
