@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,9 +13,13 @@ import android.widget.Toast;
 import com.example.eatsun.Dao;
 import com.example.eatsun.Function;
 import com.example.eatsun.UserAccount;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
@@ -26,6 +31,8 @@ public class sun_14_2 extends AppCompatActivity {
     TextView textView;
     Function function = new Function();
     UserAccount userDto = new UserAccount();
+    private String dbseat;
+
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
@@ -65,14 +72,13 @@ public class sun_14_2 extends AppCompatActivity {
 
         mbtn_random = findViewById(R.id.random_btn);
 
+
         mbtn_random.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Random random = new Random();
                 for (int i = 0; i < arr_random_num.length; i++) {
                     int arr_random_num = random.nextInt(100) + 1;
-
-
                     textView1[i].setText(Integer.toString(arr_random_num));
                 }
             }
@@ -84,8 +90,10 @@ public class sun_14_2 extends AppCompatActivity {
             public void onClick(View v) {
                 Toast toast = Toast.makeText(getApplicationContext(), "입장하셨습니다.",Toast.LENGTH_SHORT);
                 toast.show();
+
                 Intent intent = new Intent(sun_14_2.this,countdown.class);
                 startActivity(intent);
+
             }
         });
 
