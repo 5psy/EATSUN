@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eatsun">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EATSUN">
-        <activity android:name=".login"
+
+        <activity
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,51 +21,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".register"/>
-        <activity
-            android:name=".mainScreen"/>
+        <service android:name=".MyService"></service>
+        <activity android:name=".register" />
+        <activity android:name=".mainScreen" />
         <activity
             android:name=".ReservationSeat"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_14_2"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_14_1"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
-            android:name="countdown"
-            android:exported="true"/>
+            android:name=".countdown"
+            android:exported="true" />
         <activity
             android:name=".CategoryActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ReservationSeat_2"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ReservationSeat_3"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_11_1"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_11_2"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_11_3"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sun_11_4"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".payment"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".randomnumber"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
 
 </manifest>

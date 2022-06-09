@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,7 @@ public class login extends AppCompatActivity {
     }
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference("EatSun");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +57,13 @@ public class login extends AppCompatActivity {
 
         nEtid = findViewById(R.id.ID);
         nEtpwd = findViewById(R.id.PW);
+
+        Intent intent = new Intent(this,MyService.class);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            startForegroundService(intent);
+        }else {
+            startService(intent);
+        }
 
         //로그인 버튼
         Button button_lg = findViewById(R.id.LOGIN);
