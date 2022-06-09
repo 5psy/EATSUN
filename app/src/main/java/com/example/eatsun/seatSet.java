@@ -4,10 +4,12 @@ import static com.example.eatsun.login.loginId;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.view.View;
 import android.widget.Button;
 
 import android.util.Log;
 import android.view.Window;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import com.example.eatsun.UserAccount;
@@ -110,6 +112,27 @@ public class seatSet extends AppCompatActivity{
     Button b80 = (Button) this.findViewById(R.id. seat80);
     Button b81 = (Button) this.findViewById(R.id. seat81);
 
+    //test용- 자리 확인용 문구 띄우기 ->fail
+    public void checkingseat(){
+        for(int i=0; i<=81;i++){
+            Query query = databaseReference.child("EatSun").child("b"+Integer.toString(i));
+            query.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange( DataSnapshot snapshot) {
+                    if (snapshot.hasChild("userId"))
+                        if (snapshot.child("userId").getValue().equals(loginId)) {
+                            dbseat = snapshot.child("seatNum").getValue().toString();
+                            Toast.makeText(getApplicationContext(), (dbseat)+"번 자리 입니다.",Toast.LENGTH_SHORT);
+                        }
+                }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Log.w("loadPost:onCancelled", error.toException());
+                }
+            });
+        }
+    }
+
     //test용으로 -파이어베이스에서 reservationseat에 해당되는 데이터 가져오기 ->fail
     public void seatshow1(){
         for (int j = 50; j <= 81; j++) {
@@ -155,5 +178,6 @@ public class seatSet extends AppCompatActivity{
             });
 
     }
+
 }
 }

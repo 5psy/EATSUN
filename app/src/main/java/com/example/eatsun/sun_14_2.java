@@ -44,12 +44,39 @@ public class sun_14_2 extends AppCompatActivity {
         }
     }
 
+    TextView textView1[] = new TextView[1];
+    int arr_textview_id[] = {R.id.random_text1};
+
+    Button mbtn_random;
+
+    Integer arr_random_num[] = new Integer[1];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
 
+        for (int i = 0; i < arr_textview_id.length; i++) {
+            final int index;
+            index = i;
+            textView1[index] = findViewById(arr_textview_id[index]);
+        }
+
+        mbtn_random = findViewById(R.id.random_btn);
+
+        mbtn_random.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
+                for (int i = 0; i < arr_random_num.length; i++) {
+                    int arr_random_num = random.nextInt(100) + 1;
+
+
+                    textView1[i].setText(Integer.toString(arr_random_num));
+                }
+            }
+        });
 
         button = findViewById(R.id.enter);
         button.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +113,7 @@ public class sun_14_2 extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.",Toast.LENGTH_SHORT);
                 toast.show();
                 Intent i = new Intent(sun_14_2.this, login.class);
-                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);  // 로그인 화면에 로그인 정보 남아있음
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(i);
             }
         });
