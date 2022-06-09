@@ -18,7 +18,7 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         createNoficationChannel();
 
-        Intent intent1 = new Intent(this, payment.class);
+        Intent intent1 = new Intent(this, mainScreen.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivities(this,0, new Intent[]{intent1},0);
 

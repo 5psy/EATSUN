@@ -58,14 +58,6 @@ public class login extends AppCompatActivity {
         nEtid = findViewById(R.id.ID);
         nEtpwd = findViewById(R.id.PW);
 
-        // foreground 시작
-        Intent intent = new Intent(this,MyService.class);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            startForegroundService(intent);
-        }else {
-            startService(intent);
-        }
-
         //로그인 버튼
         Button button_lg = findViewById(R.id.LOGIN);
         button_lg.setOnClickListener(new View.OnClickListener() {

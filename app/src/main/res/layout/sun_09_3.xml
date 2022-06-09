@@ -337,7 +337,7 @@
                 android:id="@+id/left2"
                 android:layout_width="53dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="85dp"
                 android:layout_marginTop="685dp"
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
@@ -345,7 +345,7 @@
                 android:id="@+id/complete3"
                 android:layout_width="80dp"
                 android:layout_height="48dp"
-                android:layout_marginLeft="125dp"
+                android:layout_marginLeft="120dp"
                 android:layout_marginTop="685dp"
                 android:layout_weight="0"
                 android:backgroundTint="#4D673AB7"
