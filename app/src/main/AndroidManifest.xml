@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eatsun">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -57,6 +59,9 @@
             android:exported="true"/>
         <activity
             android:name=".payment"
+            android:exported="true"/>
+        <activity
+            android:name=".randomnumber"
             android:exported="true"/>
 
     </application>
