@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
 public class MyService extends Service {
-
+//foreground
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         createNoficationChannel();
@@ -23,8 +23,8 @@ public class MyService extends Service {
         PendingIntent pendingIntent = PendingIntent.getActivities(this,0, new Intent[]{intent1},0);
 
         Notification notification = new NotificationCompat.Builder(this,"ChannelId1")
-                .setContentTitle("my app tutorial")
-                .setContentText("our application is running")
+                .setContentTitle("EAT SUN")
+                .setContentText("application is running")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();
 
