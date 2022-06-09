@@ -71,7 +71,7 @@ public class sun_14_1 extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.",Toast.LENGTH_SHORT);
                 toast.show();
                 Intent i = new Intent(sun_14_1.this, login.class);
-                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);    // 로그인 화면에 로그인 정보 남아있음
                 startActivity(i);
             }
         });

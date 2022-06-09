@@ -37,11 +37,9 @@
 
                 <ImageView
                     android:id="@+id/mypage"
-                    android:layout_width="43dp"
-                    android:layout_height="38dp"
-                    android:layout_marginLeft="365dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="18dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="350dp"
                     app:srcCompat="@drawable/mypage" />
 
             </RelativeLayout>
@@ -59,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/malgunbd"
                 android:gravity="center|right"
                 android:text="EAT "
                 android:textColor="#69D8AD"
@@ -72,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="18dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/malgun"
+                android:fontFamily="@font/malgunbd"
                 android:gravity="center|left"
                 android:text=" SUN"
                 android:textColor="#FF0000"
@@ -90,10 +88,8 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
-                android:layout_marginRight="18dp"
                 android:fontFamily="@font/malgunbd"
-                android:text="     ---------------------------------------------------------------"
+                android:text="-------------------------------------------------------------------"
                 android:textColor="#464646" />
         </LinearLayout>
 
@@ -117,7 +113,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="18dp"
                 android:fontFamily="@font/malgunbd"
                 android:text="      학생회관 식당 메뉴"
@@ -138,9 +134,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="18dp"
                 android:fontFamily="@font/malgunbd"
-                android:text="       -----------------------------------------------------------"
+                android:text="-------------------------------------------------------------------"
                 android:textColor="#464646"
                 android:textStyle="bold" />
 
@@ -169,11 +164,9 @@
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="18dp"
                 android:fontFamily="@font/malgunbd"
-                android:text="       -----------------------------------------------------------"
+                android:text="-------------------------------------------------------------------"
                 android:textColor="#464646" />
 
         </LinearLayout>
