@@ -40,13 +40,13 @@ public class Dao {
         databaseReference.updateChildren(childUpdates);
     }
 
-    public void updateUser(UserAccount userDto, String renewTime) {
+    /*public void updateUser(UserAccount userDto, String renewTime) {
         userDto.setRemainTime(renewTime);
         Map<String, Object> postValues = userDto.toMap();
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/EatSun/User/" + loginId, postValues);
         databaseReference.updateChildren(childUpdates);
-    }
+    }*/
     //선택된 자리 데이터 업데이트
     public void updateSeat(int position, String reservationTime) {
         String key = databaseReference.child("EatSun").push().getKey();

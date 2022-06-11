@@ -78,12 +78,12 @@ public class mainScreen extends AppCompatActivity {
             }
         });
         // foreground 시작
-        Intent intent = new Intent(this,MyService.class);
+        /*Intent intent = new Intent(this,MyService.class);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             startForegroundService(intent);
         }else {
             startService(intent);
-        }
+        }*/
 
     }
 }

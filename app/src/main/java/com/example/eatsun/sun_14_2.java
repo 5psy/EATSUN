@@ -57,26 +57,6 @@ public class sun_14_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sun_14_2);
 
-        for (int i = 0; i < arr_textview_id.length; i++) {
-            final int index;
-            index = i;
-            textView1[index] = findViewById(arr_textview_id[index]);
-        }
-
-        mbtn_random = findViewById(R.id.random_btn);
-
-        mbtn_random.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random random = new Random();
-                for (int i = 0; i < arr_random_num.length; i++) {
-                    int arr_random_num = random.nextInt(100) + 1;
-
-
-                    textView1[i].setText(Integer.toString(arr_random_num));
-                }
-            }
-        });
 
         button = findViewById(R.id.enter);
         button.setOnClickListener(new View.OnClickListener() {
@@ -139,7 +119,28 @@ public class sun_14_2 extends AppCompatActivity {
                         startActivity(intent);
                     }
                 }, 1000);
+                for (int i = 0; i < arr_textview_id.length; i++) {
+                    final int index;
+                    index = i;
+                    textView1[index] = findViewById(arr_textview_id[index]);
+                }
+
+                mbtn_random = findViewById(R.id.random_btn);
+
+                mbtn_random.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Random random = new Random();
+                        for (int i = 0; i < arr_random_num.length; i++) {
+                            int arr_random_num = random.nextInt(100) + 1;
+
+
+                            textView1[i].setText(Integer.toString(arr_random_num));
+                        }
+                    }
+                });
             }
         }.start();
+
     }
 }
