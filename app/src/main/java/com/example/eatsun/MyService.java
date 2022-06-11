@@ -20,7 +20,7 @@ public class MyService extends Service {
 
         Intent intent1 = new Intent(this, mainScreen.class);
 
-        PendingIntent pendingIntent = PendingIntent.getActivities(this,0, new Intent[]{intent1},0);
+        PendingIntent pendingIntent = PendingIntent.getActivities(this,0, new Intent[]{intent1}, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Notification notification = new NotificationCompat.Builder(this,"ChannelId1")
                 .setContentTitle("EAT SUN")
