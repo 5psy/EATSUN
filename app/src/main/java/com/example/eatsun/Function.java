@@ -30,10 +30,5 @@ public class Function { // 사용자의 예약, 반납, 연장 기능을 담당�
         dao.updateUser(userDto);
     }
 
-    public void renew(UserAccount userDto) {
-        ReservationTimeAdd reservationTimeAdd = new ReservationTimeAdd();
-        String result = reservationTimeAdd.renew(userDto.getRemainTime());
-        dao.updateUser(userDto, result);
-    }
 
 }
